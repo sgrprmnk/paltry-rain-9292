@@ -1,0 +1,211 @@
+
+
+#main_container{
+    background-image: url('https://www.myfitnesspal.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fhero-collage-top-large%402x.dcc5ac56.png&w=3840&q=75');
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* width: 200px; */
+    height: 130vh;
+    object-fit: cover;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+#logo{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 35px;
+    margin-right: 30px;
+    margin-top: 20px;
+    margin-left: 11%;
+
+
+
+}
+#logo>div{
+    display: flex;
+    gap: 20px;
+}
+.nav{
+    /* border: 1px solid red; */
+    margin-top: 20px;
+
+    background-color: #0066EE;
+    display: flex;
+    /* justify-content: center; */
+    /* margin-left: 40%; */
+    gap: 10px;
+}
+.nav>div{
+    display: flex;
+    margin-left: 10%;
+    gap: 20px;
+    padding: 15px;
+    color: whitesmoke;
+
+
+}
+
+.food{
+    /* border: 1px solid red; */
+    margin-left: 10%;
+    margin-top: 8%;
+    width: 30%;
+}
+.food_h{
+font-size: 50px;
+font-style:inherit;
+font-weight: bold;
+}
+.food_p{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    /* width: 70px; */
+}
+
+.btn{
+    padding-left:55px ;
+    padding-right: 55px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+    background-color: #0066EE;
+    border: none;
+    color: whitesmoke;
+    border-radius: 8px;
+
+}
+
+
+#sec-Container{
+    background-image: url('https://images.pexels.com/photos/5965672/pexels-photo-5965672.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* width: 200px; */
+    height: 80vh;
+    object-fit: cover;
+
+}
+.search{
+    /* border: 1px solid blue; */
+    align-items: center;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+
+}
+.search_box{
+    /* border: 1px solid red; */
+    background-color: aliceblue;
+    width: 68%;
+    align-items: center;
+    text-align: center;
+    padding: 15px 8px;
+    border-radius: 20px;
+    display: flex;
+    justify-content:space-between;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+
+
+}
+
+.input{
+    padding: 8px 3px;
+    border: none;
+    width: 90%;
+    /* border: 1px solid white; */
+    background-color: aliceblue;
+
+    outline: none;
+}
+#icn{
+    margin-right: 20px;
+}
+.hcon{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid red; */
+    
+}
+.hcon>div{
+    margin-top: 50px;
+
+    width: 40%;
+    /* border: 1px solid red; */
+}
+.hcon>div>h1{
+    font-size: 50px;
+font-style:inherit;
+font-weight: bold;
+}
+.hcon>div>p{
+    /* font-style: italic; */
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+#logo{
+    color:#0066EE ;
+}
+
+
+
+/* tools */
+
+.tool{
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    height: 100vh;
+}
+.tool>div{
+    display: flex;
+    width: 80%;
+    margin-top: 40px;
+    /* border: 1px solid blue; */
+    margin-bottom: 30px;
+    gap: 20px;
+}
+.tool>div>div{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    /* border:  2px solid black; */
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    gap: 20px;
+}
+.tool>div>div>h3{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.tool-h1{
+    font-size: 50px;
+font-style:inherit;
+font-weight: bold;
+margin-bottom: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
