@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free Calories Counter - Myfitnesspal</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Bebas Neue', cursive;
+            padding: 0%;
+            margin: 0%;
+            scroll-behavior: smooth;
+
+        }
+html{
+    scroll-behavior: smooth;
+ 
+}
+body{
+    scroll-behavior: smooth;
+}
+    
+        main {
+            display: flex;
+            justify-content: space-around;
+
+            align-items: center;
+
+        }
+
+        button {
+            cursor: pointer;
+        }
+
+        #div2 {
+            margin-top: -50px;
+        }
+
+        #div2 h1 {
+            font-weight: 900;
+            font-size: 52px;
+            color: rgb(33, 33, 33);
+            width: 300px;
+            letter-spacing: .9px;
+            text-transform: capitalize;
+        }
+
+        #div2 p {
+            font-size: 20px;
+            width: 290px;
+            color: rgb(108, 108, 135);
+
+            font-family: 'Roboto', sans-serif;
+        }
+
+        #div3 {
+            background-image: url(https://www.myfitnesspal.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fhealthy-foods-desktop.448e755c.png&w=750&q=75);
+            background-size: cover;
+
+        }
+
+        #div3 img {
+            width: 400px;
+            margin-top: 40px;
+            margin-right: 150px;
+        }
+
+        #div2 {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        #div2>button:nth-child(1) {
+            padding: 5px;
+            width: 70px;
+            font-size: 18px;
+            border: none;
+            border-radius: 8px;
+            background-color: rgb(253, 218, 28);
+            color: black;
+        }
+
+        .trial {
+            width: 340px;
+            height: 52px;
+            font-size: 21px;
+            border: none;
+            background-color: rgb(0, 102, 238);
+            color: white;
+
+        }
+
+        #card {
+            display: flex;
+            justify-content: space-evenly;
+            text-align: center;
+            margin-bottom: 70px;
+            margin-top: 40px;
+
+        }
+
+        #card div h2 {
+            letter-spacing: 0.9px;
+        }
+
+        p {
+            font-family: 'Roboto', sans-serif;
+        }
+
+        #card div p {
+            font-family: 'Roboto', sans-serif;
+        }
+
+        #goals,
+        #anothergoals {
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            margin-bottom: 132px;
+            padding-bottom: 60px;
+        }
+
+        #goals>div:nth-child(2),
+        #anothergoals>div:nth-child(2) {
+            text-align: center;
+        }
+
+        #goals h2,
+        #anothergoals h2 {
+            font-size: 40px;
+            letter-spacing: 1px;
+        }
+        #anothergoals img{
+            height: 500px;
+        }
+
+        #pricing {
+            display: flex;
+            flex-direction: column;
+            width: 1000px;
+            margin: auto;
+            justify-self: center;
+            background-color: antiquewhite;
+            position: absolute;
+            top: 1050px;
+            margin-left: 250px;
+            z-index: 2;
+    
+        }
+
+
+        .pr_cards {
+            display: grid;
+          
+            gap: 20px;
+            align-items: center;
+            grid-template-columns: 600px 200px 200px;
+            padding: 20px;
+            background-color: white;
+        }
+        .pr_cards:nth-child(1){
+            margin-top: 0%;
+        }
+        .bgcolor{
+            background-color: rgb(246,246,248);
+        }
+        .pr_cards h3{
+            font-weight: bold;
+            font-family: 'Roboto', sans-serif;
+            /* letter-spacing: 0.6px; */
+            margin-bottom: 10px;
+            color: rgb(33,33,62);
+        }
+        .pr_cards p{
+            color: rgb(121,115,112);
+        }
+        #stickyfooter{
+            width: 100%;
+           
+            position: fixed;
+          
+            bottom: 0px;
+            display: flex;
+            justify-content: center;
+            background-color: white;
+            height: 75px;
+            z-index:12000;
+            padding: 20px;
+            align-items: center;
+            text-align: center;
+            box-shadow: 5px 5px 5px 5px black;
+            display: none;
+        }
+     
+    </style>
+</head>
+
+<body>
+    <main>
+        <div id="div1">
+            <img src="./photos/bg.png" alt="">
+        </div>
+        <div id="div2">
+            <button>Premium</button>
+            <h1>Start Your Free
+                Trial Today</h1>
+            <p>Premium members are 65% more likely to reach their weight loss goal.
+
+            </p>
+            <button class="trial">START FREE 1-MONTH TRIAL</button>
+        </div>
+        <div id="div3">
+            <img src="https://www.myfitnesspal.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fpremium-features.8bbea7a1.png&w=1920&q=75"
+                alt="">
+        </div>
+    </main>
+    <div id="card">
+        <div><img
+                src="https://www.myfitnesspal.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fmeal-plans-circle.5b29584a.png&w=256&q=75"
+                alt="">
+            <h2>Meal Plans & Recipes
+            </h2>
+            <p>Gain insight into your nutrition
+
+            </p>
+        </div>
+        <div><img
+                src="https://www.myfitnesspal.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fpersonalized-goals-circle.7659525c.png&w=256&q=75"
+                alt="">
+            <h2>Personalized Goals
+
+            </h2>
+            <p>Get guidance & coaching tailored to you
+
+
+
+            </p>
+        </div>
+        <div><img
+                src="https://www.myfitnesspal.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fad-free-circle.3fa88ffe.png&w=256&q=75"
+                alt="">
+            <h2>Ad-Free Experience
+
+            </h2>
+            <p>Focus on your goals without distraction
+
+
+
+            </p>
+        </div>
+    </div>
+    <div id="goals">
+        <img src="https://www.myfitnesspal.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fimg-woman.535f0b88.png&w=384&q=75"
+            alt="">
+        <div>
+            <h2>Your Goals, Your Way
+            </h2>
+            <p>Advanced tools and in-depth analysis to help you build lifelong healthy habits.
+
+            </p>
+        </div>
+
+        <img src="./photos/bg.png" alt="">
+    </div>
+
+    <div id="anothergoals">
+        <img src="./photos/bg.png" alt="">
+        <div>
+
+        </div>
+
+        <img src="https://www.myfitnesspal.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fimg-man.e01e1156.png&w=640&q=75"
+            alt="">
+    </div>
+
+    <div id="pricing">
+        <div class="pr_cards">
+            <div></div>
+                <h3>Free</h3>
+                <h3>Premium</h3>
+            </div>
+            <div class="pr_cards">
+                <div>
+                    <h3>Nutrition Tracking
+                    </h3>
+                    <p>Log your food from our extensive database.
+
+                    </p>
+                </div>
+                <div>
+                    <img src="https://www.myfitnesspal.com/_next/static/media/check-mark.a58300ae.svg" alt="">
+                </div>
+                <div>
+                    <img src="https://www.myfitnesspal.com/_next/static/media/check-mark.a58300ae.svg" alt="">
+                </div>
+            </div>
+            <div class="pr_cards bgcolor">
+                <div>
+                    <h3>Nutrition Tracking
+                    </h3>
+                    <p>Log your food from our extensive database.
+
+                    </p>
+                </div>
+                <div>
+                 
+                </div>
+                <div>
+                    <img src="https://www.myfitnesspal.com/_next/static/media/check-mark.a58300ae.svg" alt="">
+                </div>
+            </div>
+            <div class="pr_cards">
+                <div>
+                    <h3>Customizable Carbs, Protein & Fat Goals
+
+                    </h3>
+                    <p>Track your macros by gram or percentage.
+
+
+
+                    </p>
+                </div>
+                <div>
+                    
+                </div>
+                <div>
+                    <img src="https://www.myfitnesspal.com/_next/static/media/check-mark.a58300ae.svg" alt="">
+                </div>
+            </div>
+            <div class="pr_cards bgcolor">
+                <div>
+                    <h3>Guided Fitness & Nutrition Plans
+
+                    </h3>
+                    <p>Get coaching and content to achieve your goals.
+
+
+
+                    </p>
+                </div>
+                <div>
+                    
+                </div>
+                <div>
+                    <img src="https://www.myfitnesspal.com/_next/static/media/check-mark.a58300ae.svg" alt="">
+                </div>
+            </div>
+            <div class="pr_cards">
+                <div>
+                    <h3>Custom Home Screen Dashboard
+
+                    </h3>
+                    <p>Reach goals faster by seeing what’s important to you.
+
+
+
+                    </p>
+                </div>
+                <div>
+                   
+                </div>
+                <div>
+                    <img src="https://www.myfitnesspal.com/_next/static/media/check-mark.a58300ae.svg" alt="">
+                </div>
+            </div>
+            <div class="pr_cards bgcolor">
+                <div>
+                    <h3>Food Analysis & Insights
+                    </h3>
+                    <p>Follow your progress through your data.
+
+                    </p>
+                </div>
+                <div>
+                   
+                </div>
+                <div>
+                    <img src="https://www.myfitnesspal.com/_next/static/media/check-mark.a58300ae.svg" alt="">
+                </div>
+            </div>
+            <div class="pr_cards">
+                <div>
+                    <h3>Meals & Recipes
+                    </h3>
+                    <p>Learn how to eat with your goals in mind.
+
+
+
+                    </p>
+                </div>
+                <div>
+                   
+                </div>
+                <div>
+                    <img src="https://www.myfitnesspal.com/_next/static/media/check-mark.a58300ae.svg" alt="">
+                </div>
+            </div>
+            <div class="pr_cards bgcolor">
+                <div>
+                    <h3>Ad-Free Experience
+
+                    </h3>
+                    <p>Focus on your fitness and nutrition without ads.
+
+                    </p>
+                </div>
+                <div>
+                   
+                </div>
+                <div>
+                    <img src="https://www.myfitnesspal.com/_next/static/media/check-mark.a58300ae.svg" alt="">
+                </div>
+            </div>
+     
+        <div class="pr_cards">
+            <div>
+                <h3>Subtract Exercise Calories
+
+
+                </h3>
+                <p>Focus on your fitness and nutrition without ads.
+
+                </p>
+            </div>
+            <div>
+               
+            </div>
+            <div>
+                <img src="https://www.myfitnesspal.com/_next/static/media/check-mark.a58300ae.svg" alt="">
+            </div>
+        </div>
+   
+        <div class="pr_cards bgcolor">
+        <div>
+            <h3>Ad-Free Experience
+
+            </h3>
+            <p>Focus on your fitness and nutrition without ads.
+
+            </p>
+        </div>
+        <div>
+           
+        </div>
+        <div>
+            <img src="https://www.myfitnesspal.com/_next/static/media/check-mark.a58300ae.svg" alt="">
+        </div>
+    </div>
+</div>
+</div>
+<div id="stickyfooter">
+    <button class="trial">START FREE 1-MONTH TRIAL</button>
+</div>
+</body>
+<script>
+    let sticky=document.getElementById("stickyfooter")
+    let pricing=document.getElementById("pricing");
+    let goals=document.getElementById("goals")
+    goals.addEventListener("mouseenter",()=>{
+        sticky.style.display="none"
+    })
+ 
+    pricing.addEventListener("mouseenter",function(){
+        sticky.style.display="block"
+        sticky.style.transition="all 5s ease-in;"
+    
+    })
+    // setTimeout(function(){
+        
+    // },5000)
+</script>
+
+</html>
