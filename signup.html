@@ -22,6 +22,10 @@
         color: blue;
         cursor: pointer;
       }
+      #navbar > div:hover {
+        background-color: wheat;
+        border-radius: 5px;
+      }
       #navbar > div + div {
         padding-top: 10px;
         font-size: large;
@@ -106,7 +110,9 @@
   <body>
     <div id="navbar">
       <div>myfitnesspal</div>
-      <div><b>LOG IN</b></div>
+      <div>
+        <b><a href="Login.html">LOG IN</a></b>
+      </div>
     </div>
 
     <div class="signup-form">
@@ -117,12 +123,17 @@
       <h1><b>Sign Up Now</b></h1>
       <form action="">
         <input
-          type="name"
+          type="text"
           id="user_name"
           class="input-box"
           placeholder="Enter First Name"
         />
-        <input type="name" class="input-box" placeholder="Enter Last Name" />
+        <input
+          type="text"
+          class="input-box"
+          id="user_lastname"
+          placeholder="Enter Last Name"
+        />
         <input
           type="email"
           class="input-box"
@@ -131,7 +142,9 @@
         />
         <select id="select" name="Gender" class="input-box">
           <option value="Male">Male</option>
-          <option value="Female">Female</option></select
+          <option value="Female">Female</option>
+          <option value="Other">Other</option>        
+          </select
         ><br />
         <input
           type="password"
@@ -140,7 +153,7 @@
           placeholder="Enter Password"
         /><br /><br />
         <p>
-          <span><input type="checkbox" /></span> agree to the terms of services
+          <span><input type="checkbox" id="checkbox" /></span> agree to the terms of services
         </p>
         <br />
         <button type="button" onclick="signup()" class="signup-btn">
@@ -150,29 +163,43 @@
         <p class="or">Or</p>
         <button type="button" class="twitter-btn">Login with twitter</button
         ><br /><br />
-        <p>Do you have an account ? <a href="#">Login</a></p>
+        <p>Do you have an account ? <a href="Login.html">Login</a></p>
       </form>
     </div>
   </body>
   <script>
+    //adding data to local storage.
+
     function signup() {
-      let user_name = document.getElementById("user_name").value;
-      let user_email = document.getElementById("user_email").value;
-      let password = document.getElementById("user_password").value;
+      let user_name = document.getElementById("user_name").value;             //step1
+      let user_email = document.getElementById("user_email").value;           //step1
+      let password = document.getElementById("user_password").value;          //step1
+      let user_lastname = document.getElementById("user_lastname").value;      //step1
+      let user_gender = document.getElementById("select").value;             //step1
+      let checkbox = document.getElementById("checkbox").checked;           //step1
+      let user_info;
       if (
         user_email.length < 1 ||
-        user_info.length < 0 ||
+        user_name.length < 0 ||         //step4
         password.length < 1
       ) {
-        alert("Please,Fill all the information");
-      } else {
-        let user_info = {
-          user_name,
+        alert("Please,fill all the information"); //if condition is not satisfied then it shows alert
+      } else {   //step5
+        user_info = {
+          user_name,                  //step2
           user_email,
           password,
         };
-        localStorage.setItem("user_info", JSON.stringify(user_info));
-        alert("You've been Sign up  successful");
+        localStorage.setItem("user_info", JSON.stringify(user_info));     //step3  //saving the data to localstorage. if all this information are filled then it shows alert.  
+        //by using this empty string we can empty the input details on refreshing it. and this are always written after localstorage.
+        document.getElementById("user_name").value="";    
+        document.getElementById("user_email").value="";
+        document.getElementById("user_password").value="";
+        document.getElementById("user_lastname").value="";
+        document.getElementById("checkbox").checked="";
+
+
+        alert("You've been sign up successfully");
       }
     }
   </script>
