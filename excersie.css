@@ -74,26 +74,7 @@
         margin-top: -10px;
          
     }
-    #Matching-box{
-        display: flex;
-        grid-template-columns: repeat(2,1fr);
-        width: 60%;
-        
-        margin: auto;
-        
-    }
-    #text-box{
-        border: 1px solid black;
-        width: 40%;
-        margin-left: 10px;
 
-
-    }
-    #calculator {
-        width: 50%;
-        margin-left: 60px;
-        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-    }
     #calculator h3 {
         font-family: Arial, sans-serif;
         font-size: 13px;
@@ -202,6 +183,7 @@
         width: 60%;
         margin: auto;
         margin-top: -10px;
+        margin-left: 260px;
     }
     h4 {
         font-family: Arial,sans-serif;
@@ -226,4 +208,55 @@
         text-decoration: none solid rgb(10,82,130);
         text-align: center;
         color: #0A5282;
+    }
+
+    #pagination {
+        width: 30%;
+        display: flex;
+        font-size: 10px;
+        gap:10px;
+        margin: auto;
+        margin-top: -13px;
+        font-family: Arial, sans-serif;
+        text-decoration: none solid rgb(247,148,30);
+        text-align: center;
+        word-spacing: 0px;
+        cursor: pointer;
+        
+    }
+    #pagination a {
+        text-decoration: none;
+    }
+
+    #Matching-box{
+        display: grid;
+        grid-template-columns: repeat(2,400px);
+       justify-content: center;
+        margin: auto;
+        
+    }
+    #text_box{
+        width: 310px;
+        padding-left: 10px;
+        height: 180px;
+        margin: auto;
+        border: 1px solid black;
+    }
+    #calculator {
+      margin: auto;
+      height: 180px;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    }
+
+    #text_box p {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 10px;
+        line-height: 18px;
+        text-decoration: none solid rgb(34,34,34);
+        text-align: left;
+        color: #0F73Ab;
+        margin: 0 0 3px 0;
+        /* height: 32px;
+        width: 326px; */
+        border-bottom: 1px solid #e6e6e6;
     }
