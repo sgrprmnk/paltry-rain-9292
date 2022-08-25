@@ -20,7 +20,7 @@
         background: #fff;
         line-height: 1.5em;
       }
-      img {
+      .sub img {
         height: 75px;
         width: 75px;
       }
@@ -57,15 +57,15 @@
         border-bottom: 1px solid #d8d8d8;
       }
       .parent {
-        width: 50vw;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
       }
       .sidebar {
-        width: 240px;
-        margin-left: 40px;
+        width: 200px;
+
         overflow: auto;
-        float: left;
+
         padding-top: 50px;
         padding-inline-start: 40px;
       }
@@ -95,9 +95,10 @@
         margin-bottom: 40px;
       }
       .searchbar {
+        width: 180px;
         font-size: 18px;
         color: #666666;
-        padding: 2px;
+        padding: 7px;
         background: #f7f7f7;
         border: 1px solid #d8d8d8;
       }
@@ -115,16 +116,145 @@
       .part-parent {
         display: flex;
       }
+      .part-1 {
+        width: 700px;
+
+        margin: auto;
+        margin-left: 15vw;
+        padding-inline-start: 40px;
+      }
+      .part-2 {
+        margin-top: 50px;
+        width: 200px;
+        margin-right: 15vw;
+
+        float: left;
+      }
+      .sub2 h3 {
+        margin-bottom: 0px;
+        padding: 0px;
+      }
+      .sub2 {
+        width: 125px;
+        height: 75px;
+        margin-left: 15px;
+        position: relative;
+        float: left;
+      }
+      .title {
+        margin-bottom: 1px;
+        font-size: 14px;
+      }
+      .tex {
+        font-size: 12px;
+        height: 30px;
+        color: #999999;
+      }
+      .main-title {
+        margin-top: 10px;
+        padding-bottom: 5px;
+        font-size: 20px;
+      }
+      #featured-rotator {
+        position: relative;
+        overflow: hidden;
+        margin: 0 0 50px 0;
+        height: 252px;
+      }
+
+      #featured-rotator .featured-image {
+        width: 550px;
+        height: 250px;
+        position: absolute;
+        top: 0px;
+        left: 75px;
+        z-index: 5;
+        opacity: 0;
+        border: 1px solid #d8d8d8;
+        -webkit-transition: all 1s ease 0.05s;
+        transition: all 1s ease 0.05s;
+      }
+
+      #featured-rotator .previous-image {
+        -webkit-transform: scale(0.85, 0.85);
+        transform: scale(0.85, 0.85);
+        left: -40px;
+        cursor: pointer;
+        opacity: 0.5;
+      }
+
+      #featured-rotator .next-image {
+        -webkit-transform: scale(0.85, 0.85);
+        transform: scale(0.85, 0.85);
+        left: 188px;
+        cursor: pointer;
+        opacity: 0.5;
+      }
+
+      #featured-rotator .current-image {
+        width: 550px;
+        height: 250px;
+        z-index: 10;
+        opacity: 1;
+        top: 0px;
+        left: 75px;
+      }
     </style>
   </head>
   <body>
+    <!-- fdfdfdfd -->
     <div class="part-parent">
       <div class="part-1">
+        <div id="featured-rotator">
+          <div class="featured-image previous-image">
+            <img
+              src="https://dakd0cjsv8wfa.cloudfront.net/images/api_clients/0/api_clients_120_2_10_0_25954.png"
+              alt=""
+            />
+          </div>
+          <div class="featured-image">
+            <img
+              src="https://dakd0cjsv8wfa.cloudfront.net/images/api_clients/0/api_clients_229_2_10_0_74866.png"
+              alt=""
+            />
+          </div>
+          <div class="featured-image current-image">
+            <img
+              src="https://dakd0cjsv8wfa.cloudfront.net/images/api_clients/0/api_clients_389_2_10_0_4027.png"
+              alt=""
+            />
+          </div>
+          <div class="featured-image next-image">
+            <img
+              src="https://dakd0cjsv8wfa.cloudfront.net/images/api_clients/0/api_clients_180_2_10_0_26145.png"
+              alt=""
+            />
+          </div>
+          <div class="featured-image">
+            <img
+              src="https://dakd0cjsv8wfa.cloudfront.net/images/api_clients/0/api_clients_30_2_10_0_90706.png"
+              alt=""
+            />
+          </div>
+          <div class="featured-image">
+            <img
+              src="https://dakd0cjsv8wfa.cloudfront.net/images/api_clients/0/api_clients_102_2_10_0_2751.png"
+              alt=""
+            />
+          </div>
+          <div class="featured-image">
+            <img
+              src="https://dakd0cjsv8wfa.cloudfront.net/images/api_clients/0/api_clients_392_2_10_0_3957.png"
+              alt=""
+            />
+          </div>
+        </div>
         <div class="featured-apps">
-          <div>
+          <div class="main-title">
             <h2>Featured Apps</h2>
           </div>
           <div class="parent">
+            <!-- main part start -->
             <div class="main">
               <div class="sub">
                 <img
@@ -133,12 +263,12 @@
                 />
               </div>
               <div class="sub2">
-                <h3>Fitbit</h3>
-                <p>Activity Trackers</p>
+                <div class="title"><a href="">Fitbit</a></div>
+                <div class="tex">Activity Trackers</div>
                 <button>GET</button>
               </div>
             </div>
-
+            <!-- main part end -->
             <div class="main">
               <div class="sub">
                 <img
@@ -147,8 +277,8 @@
                 />
               </div>
               <div class="sub2">
-                <h3>Fitbit</h3>
-                <p>Activity Trackers</p>
+                <div class="title"><a href="">Fitbit</a></div>
+                <div class="tex">Activity Trackers</div>
                 <button>GET</button>
               </div>
             </div>
@@ -160,29 +290,83 @@
                 />
               </div>
               <div class="sub2">
-                <h3>Fitbit</h3>
-                <p>Activity Trackers</p>
+                <div class="title"><a href="">Fitbit</a></div>
+                <div class="tex">Activity Trackers</div>
+                <button>GET</button>
+              </div>
+            </div>
+            <!--  -->
+            <div class="main">
+              <div class="sub">
+                <img
+                  src="https://dakd0cjsv8wfa.cloudfront.net/images/api_clients/0/api_clients_392_1_10_0_97000.png"
+                  alt=""
+                />
+              </div>
+              <div class="sub2">
+                <div class="title"><a href="">Fitbit</a></div>
+                <div class="tex">Activity Trackers</div>
+                <button>GET</button>
+              </div>
+            </div>
+            <div class="main">
+              <div class="sub">
+                <img
+                  src="https://dakd0cjsv8wfa.cloudfront.net/images/api_clients/0/api_clients_229_1_10_0_84885.png"
+                  alt=""
+                />
+              </div>
+              <div class="sub2">
+                <div class="title"><a href="">Fitbit</a></div>
+                <div class="tex">Activity Trackers</div>
+                <button>GET</button>
+              </div>
+            </div>
+            <div class="main">
+              <div class="sub">
+                <img
+                  src="https://dakd0cjsv8wfa.cloudfront.net/images/api_clients/0/api_clients_180_1_10_0_3668.png"
+                  alt=""
+                />
+              </div>
+              <div class="sub2">
+                <div class="title"><a href="">Fitbit</a></div>
+                <div class="tex">Activity Trackers</div>
+                <button>GET</button>
+              </div>
+            </div>
+            <div class="main">
+              <div class="sub">
+                <img
+                  src="https://dakd0cjsv8wfa.cloudfront.net/images/api_clients/0/api_clients_102_1_10_0_44251.png"
+                  alt=""
+                />
+              </div>
+              <div class="sub2">
+                <div class="title"><a href="">Fitbit</a></div>
+                <div class="tex">Activity Trackers</div>
                 <button>GET</button>
               </div>
             </div>
           </div>
         </div>
       </div>
+      <div class="part1a"></div>
       <div class="part-2">
         <div class="sidebar">
           <input type="text" class="searchbar" placeholder="Search" />
           <div class="categories">
             <h1>Categories</h1>
             <ul>
-              <li><a href="">All</a></li>
-              <li><a href="">Activity Trackers</a></li>
-              <li><a href="">Step Trackers</a></li>
-              <li><a href="">Scales</a></li>
-              <li><a href="">Lifestyle</a></li>
-              <li><a href="">Wearables</a></li>
-              <li><a href="">Fitness Apps</a></li>
-              <li><a href="">Exercise Equipment</a></li>
-              <li><a href="">Fertility</a></li>
+              <a href=""> <li>All</li></a>
+              <a href=""> <li>Activity Trackers</li></a>
+              <a href=""> <li>Step Trackers</li></a>
+              <a href=""> <li>Scales</li></a>
+              <a href=""> <li>Lifestyle</li> </a>
+              <a href=""> <li>Wearables</li></a>
+              <a href=""> <li>Fitness Apps</li></a>
+              <a href=""> <li>Exercise Equipment</li></a>
+              <a href=""> <li>Fertility</li> </a>
             </ul>
           </div>
         </div>
@@ -190,4 +374,87 @@
     </div>
   </body>
 </html>
+<script>
+  let customStore = [
+    {
+      title: "Fitbit",
+      category: "Activity Trackers",
+      url: "https://dakd0cjsv8wfa.cloudfront.net/images/api_clients/0/api_clients_30_1_10_0_45741.png",
+    },
+    {
+      title: "Garmin Connect",
+      category: "Activity Trackers",
+      url: "https://dakd0cjsv8wfa.cloudfront.net/images/api_clients/0/api_clients_120_1_10_0_9523.png",
+    },
+    {
+      title: "MapMyFitness",
+      category: "Fitness Apps",
+      url: "https://dakd0cjsv8wfa.cloudfront.net/images/api_clients/0/api_clients_182_1_10_0_90660.png",
+    },
+
+    {
+      title: "MapMyWalk",
+      category: "Fitness Apps",
+      url: "https://dakd0cjsv8wfa.cloudfront.net/images/api_clients/0/api_clients_182_1_10_0_90660.png",
+    },
+    {
+      title: "MapMyRide",
+      category: "Fitness Apps",
+      url: "https://dakd0cjsv8wfa.cloudfront.net/images/api_clients/0/api_clients_184_1_10_0_61431.png",
+    },
+    {
+      title: "MapMyRun",
+      category: "Fitness Apps",
+      url: "https://dakd0cjsv8wfa.cloudfront.net/images/api_clients/0/api_clients_180_1_10_0_3668.png",
+    },
+
+    {
+      title: "Withings Health...",
+      category: "Activity Trackers",
+      url: "https://dakd0cjsv8wfa.cloudfront.net/images/api_clients/0/api_clients_139_1_10_0_10915.png",
+    },
+    {
+      title: "Strava",
+      category: "Fitness Apps",
+      url: "https://dakd0cjsv8wfa.cloudfront.net/images/api_clients/0/api_clients_229_1_10_0_84885.png",
+    },
+    {
+      title: "RunKeeper",
+      category: "Fitness Apps",
+      url: "https://dakd0cjsv8wfa.cloudfront.net/images/api_clients/0/api_clients_102_1_10_0_44251.png",
+    },
+
+    {
+      title: "Runtastic",
+      category: "Fitness Apps",
+      url: "https://dakd0cjsv8wfa.cloudfront.net/images/api_clients/0/api_clients_2_1_10_0_87968.png",
+    },
+    {
+      title: "Polar Flow",
+      category: "Activity Tracker",
+      url: "https://dakd0cjsv8wfa.cloudfront.net/images/api_clients/0/api_clients_331_1_10_0_52964.png",
+    },
+    {
+      title: "xID",
+      category: "Fitness Apps",
+      url: "https://dakd0cjsv8wfa.cloudfront.net/images/api_clients/0/api_clients_86_1_10_0_19952.png",
+    },
+
+    {
+      title: "TrainingPeaks",
+      category: "Fitness Apps",
+      url: "https://dakd0cjsv8wfa.cloudfront.net/images/api_clients/0/api_clients_306_1_10_0_49537.png",
+    },
+    {
+      title: "Misfit",
+      category: "Activity Tracker",
+      url: "https://dakd0cjsv8wfa.cloudfront.net/images/api_clients/0/api_clients_282_1_10_0_81543.png",
+    },
+    {
+      title: "Glow",
+      category: "Fertility",
+      url: "https://dakd0cjsv8wfa.cloudfront.net/images/api_clients/0/api_clients_130_1_10_0_23647.png",
+    },
+  ];
+</script>
 <script></script>
