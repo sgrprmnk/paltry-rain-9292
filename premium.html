@@ -122,7 +122,7 @@ body{
             display: flex;
             width: 100%;
             justify-content: space-between;
-            margin-bottom: 132px;
+            margin-bottom: 50px;
             padding-bottom: 60px;
         }
 
@@ -151,6 +151,9 @@ body{
             top: 1050px;
             margin-left: 250px;
             z-index: 2;
+            -webkit-box-shadow: 0 0 10px 1px rgb(41, 41, 20);
+    -moz-box-shadow: 0 0 10px 1px rgb(41, 41, 20);
+    box-shadow: 0 0 20px 1px rgb(41, 41, 20);
     
         }
 
@@ -197,7 +200,212 @@ body{
             box-shadow: 5px 5px 5px 5px black;
             display: none;
         }
+        #stories{
+            text-align: center;
+        }
+        #stories_card img{
+            width: 350px;
+          
+        }
+        #stories_card{
+            display: flex;
+           justify-content: center;
+            margin-top: 40px;
+            gap: 40px;
+            margin-bottom: 60px;
+            background-image: url(./photos/bg.png);
+            background-repeat: no-repeat;
+            background-position: right;
+    
+         
+        }
+        #stories_card p{
+            margin-top: 10px;
+            width: 350px;
+        }
+        #stories>h1{
+            letter-spacing: 1px;
+            font-size: 36px;
+        }
+        #stories h3{
+            letter-spacing: 1.5px;
+            font-size: 25px;
+        }
+        #stories_card>div{
+            padding-bottom: 40px;
+            border: 0.8px solid rgb(58, 58, 58);
+            border-radius: 8px;
+            width: 350px;
+            overflow: hidden;
+            -webkit-box-shadow: 0 0 5px 2px whitesmoke;
+    -moz-box-shadow: 0 0 5px 2px whitesmoke;
+    box-shadow: 0 0 5px 2px whitesmoke;
+        }
+
+        .premium_btn{
+        margin-top: auto;
+      
+        padding: 5px;
+            width: 70px;
+            font-size: 18px;
+            border: none;
+            border-radius: 8px;
+            background-color: rgb(253, 218, 28);
+            color: black;
+           display: flex;
+           text-align: center;
+           justify-self: center;
+        
+    }
+    #heading{
+        display: flex;
+        justify-content: center;
+       
+        flex-direction: column;
+        margin-bottom: 40px;
+    }
+    #heading button{
+        margin: auto;
+        display: block;
+        width: 180px;
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    #heading h2{
+        margin: auto;
+        font-size: 46px;
+        letter-spacing: 1.2px;
+        margin-bottom: 40px;
+    }
+    #heading p{
+        margin: auto;
+        width: 600px;
+        line-height: 21px;
+        text-align: center;
+        margin-top: -10px;
+    }
+    #faq{
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        margin-bottom: 70px;
+      
+    }
+    .faq_card{
+        width:800px ;
+        text-align: center;
+        margin: auto;
+    margin-top: 10px;
+    margin-bottom
+    : 10px;
+    height: 90px;
+    scroll-behavior: smooth;
+    
+
+ 
+    overflow: hidden;
+    }
+    .faq_card>div{
+        padding:25px;
+        -webkit-box-shadow: 0 0 5px 2px rgb(246,246,248);
+    -moz-box-shadow: 0 0 5px 2px rgb(246,246,248);
+    box-shadow: 0 0 5px 2px rgb(246,246,248);
+    border: 1px solid rgb(246,246,248);
+    }
+    .faq_card>div:nth-child(1){
+        background-color: rgb(246,246,248);
+        border-top-left-radius: 5px;
+       
+        border-top-right-radius: 5px;
+    }
+     .faq_card h3{
+        letter-spacing: 1px;
+        font-weight: 400;
+        /* font-family: 'Roboto', sans-serif; */
+     }
+     .faq_card p{
+        line-height: 22px;
+     }
+     #subscribe{
+        display: flex;
+        /* gap: 20px; */
+        justify-items: center;
+        align-items: center;
+        margin-bottom: 50px;
+      
+     }
+     #subscribe>div{
+        text-align: center;
+        width: 400px;
+        border: 2px solid red;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        margin: auto;
+        justify-content: center;
+
+        border: 5px solid rgb(253, 218, 28);
+        border-top: 40px solid rgb(253,218,28);
+     }
+     #subscribe h2{
+        position: relative;
+        top: -35px;
+     }
+     #subscribe h3{
+       font-size: 30px;
+       font-weight: 400;
+     }
+     #subscribe h1{
+        font-size: 40px;
+     }
+     #subscribe p{
+        width: 200px;
+        margin: auto;
+        text-align: center;
+     }
+     #subscribe>div:nth-child(1) button{
+        text-align: center;
+        margin: auto;
+        background-color: rgb(0,102,238);
+        color: white;
+        height: 45px;
+        border: none;
+        width: 80%;
+        border-radius: 8px;
+        font-size: 22px;
+        margin-bottom: 40px;
+     }
+     #subscribe>div:nth-child(1){
+        margin-right: 50px;
+     }
+     #subscribe>div:nth-child(2){
+        border: none;
+        -webkit-box-shadow: 0 0 5px 2px rgb(246,246,248);
+    -moz-box-shadow: 0 0 5px 2px rgb(246,246,248);
+    box-shadow: 0 0 5px 2px rgb(246,246,248);
+    border: 1px solid rgb(246,246,248);
+    margin-left:0px;
+    
+     }
+     #subscribe>div:nth-child(2) button{
+        text-align: center;
+        margin: auto;
      
+        height: 45px;
+        border: none;
+        width: 80%;
+        border-radius: 8px;
+        font-size: 22px;
+        margin-bottom: 40px;
+        background-color: transparent;
+        border: 2px solid rgb(0,102,238);
+        color: rgb(0,102,238);
+      
+    }
+     #subscribe span{
+        font-size: 17px;
+        font-weight: 400;
+     }
     </style>
 </head>
 
@@ -207,7 +415,7 @@ body{
             <img src="./photos/bg.png" alt="">
         </div>
         <div id="div2">
-            <button>Premium</button>
+            <button >Premium</button>
             <h1>Start Your Free
                 Trial Today</h1>
             <p>Premium members are 65% more likely to reach their weight loss goal.
@@ -457,6 +665,99 @@ body{
 <div id="stickyfooter">
     <button class="trial">START FREE 1-MONTH TRIAL</button>
 </div>
+<div id="stories">
+    <h1>Victory Stories
+    </h1>
+    <p>Your victories are our victories and we want to share them with the world.
+
+    </p>
+    <div id="stories_card">
+        <div><img src="https://www.myfitnesspal.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FVictoryStoryNaQuisha.0d4dd49e.jpeg&w=1920&q=75" alt="">
+        <h3>Na'Quisha
+        </h3>
+    <p>"It's truly changed my life and it allowed me to get some direction in my weight loss journey."
+
+    </p></div>
+    <div><img src="https://www.myfitnesspal.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FVictoryStoryEric.0eb618cf.jpeg&w=1920&q=75" alt="">
+        <h3>Eric
+        </h3>
+    <p>"Once I lost 10 pounds, then another 10 pounds, it blew me away."
+
+
+
+    </p></div>
+    <div><img src="https://www.myfitnesspal.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FVictoryStoryMolly.2e74f853.jpeg&w=1920&q=75" alt="">
+        <h3>Molly
+        </h3>
+    <p>"I love the app because it allows for balance."
+
+
+
+    </p></div>
+    </div>
+</div>
+<div id="heading"><button class="premium_btn">Premium</button>
+<h2>Frequently Asked Questions
+
+
+
+
+
+
+
+
+
+</h2></div>
+
+<div id="faq">
+    <div class="faq_card">
+        <div><h3>When will I get charged</h3></div>
+        <div><p>If you’ve never upgraded to Premium or never started a Premium trial before, you are eligible for a 1-month trial, and the first Premium subscription charge on your credit card will be after the trial. Once the trial ends, your subscription will auto-renew unless you cancel. If you purchased a monthly subscription, you will get charged every month. If you purchased an annual subscription, you will be charged every year.
+        </p></div>
+    </div>
+    <div class="faq_card">
+        <div><h3>Will my subscription automatically renew?</h3></div>
+        <div><p>MyFitnessPal Premium features are available on a monthly or yearly subscription basis, depending on which one you purchase. By default, your subscription will renew automatically when your membership period is up—unless you manually cancel your subscription.
+        </p></div>
+    </div>
+    <div class="faq_card">
+        <div><h3>Can I cancel anytime?</h3></div>
+        <div><p>Yes, you may cancel your recurring subscription at any time. Cancel at least 24 hours before the next renewal date to avoid being charged for the upcoming billing cycle. When you cancel, you are canceling the next billing charge—Premium features will remain available to you until the end of your current paid subscription period, regardless of when you cancel the automatic renewal.
+
+
+
+
+        </p></div>
+    </div>
+    <div class="faq_card">
+        <div><h3>What do i need to upgrade?</h3></div>
+        <div><p>Just tap one of the buttons below to start a monthly or annual subscription. A Premium subscription adds more extensive options to MyFitnessPal's feature set, increasing customizability and flexibility. Your MyFitnessPal account will stay just as you've built it—friends, favorite foods, diary history—with many new and enhanced features added once you go Premium.
+
+
+        </p></div>
+    </div>
+</div>
+<div id="heading"><button class="premium_btn">1 month Free</button>
+    <h2>Go Premium, Get Results
+    
+    
+    </h2><p>Choose a MyFitnessPal Premium plan to start your 1-month free trial. You will be charged after the trial has ended—cancel anytime.
+
+    </p></div>
+    <div id="subscribe">
+        <div><h2>SAVE 58%
+        </h2>
+        <h3>ANNUAL</h3>
+    <h1>₹3,100.00 <span>Per Year</span></h1> <p>₹3,100.00 billed yearly after free trial ends.
+    </p> <button>SUBSCRIBE</button></div>
+    <div style="padding-top: 15px;">
+    <h3>MONTHLY
+    </h3>
+<h1>₹620.00 <span>Per Month</span></h1> <p>₹620.00 billed monthly after free trial ends.
+
+
+</p> <button>SUBSCRIBE</button></div>
+    </div>
 </body>
 <script>
     let sticky=document.getElementById("stickyfooter")
@@ -474,6 +775,19 @@ body{
     // setTimeout(function(){
         
     // },5000)
+    let faq=document.querySelectorAll(".faq_card")
+   faq.forEach(function(e){
+    e.addEventListener("click",function(){
+        faqclick(e.clientHeight,e)})
+   })
+    function faqclick(showit,el){
+        if(showit!=90){
+            el.style.height="90px"
+            el.style.transition="height 2s"
+        }else{
+            el.style.height="auto"
+        }
+    }
 </script>
 
 </html>
