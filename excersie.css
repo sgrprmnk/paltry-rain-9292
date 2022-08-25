@@ -1,0 +1,262 @@
+
+    #head-bar {
+        width:60%;
+        margin: auto;
+        margin-top: 80px;
+    }
+    #head-bar hr {
+        margin-top: 15px;
+        margin-left: 20px;
+        border: 0.4px thin;
+    }
+    #head-bar h2 {
+        margin: auto;
+        margin-left: 20px;
+        font-family: Arial, sans-serif;
+        font-size: 20px;
+        line-height: 18px;
+        color : #0A5282;
+        font-weight: 700;
+        text-decoration: none solid rgb(10,82,120);
+    }
+    #search-box {
+        display: flex;
+        grid-template-columns: repeat(2,1fr);
+        width: 60%;
+        margin: auto;
+        height: 100px;
+        gap:60px
+    }
+    #search h3 {
+        font-size: 15px;
+        color: #0A5282;
+        font-family: Arial,sans-serif;
+        font-weight: 700;
+        margin-left: 20px;
+        text-decoration: none solid rgb(34,34,34);
+        margin-top: 10px;
+    }
+    #search_bar{
+        width: 68%;
+        margin-left: 20px;
+        height: 20px;
+        margin-top: -20px;
+    }
+    #search-box button{
+        background-color:#51A351;
+        font-family: Arial,sans-serif;
+        font-size: 10px;
+        text-align: center;
+        text-decoration: none solid rgb (255,255,255);
+        text-transform: capitalize;
+        word-spacing: 0px;
+        cursor: pointer;
+        border : 0px solid ;
+        border-radius: 4px;
+        color: #ffff;
+        height: 25px;
+        margin-top: -10px;
+    }
+    #dropdown h3 {
+        font-size: 15px;
+        font-family: Arial,sans-serif;
+        font-weight: 700;
+        text-decoration: none solid rgb(10,82,130);
+        color: #0A5282;
+        margin-left: 20px;
+        margin-top: 10px;
+        
+    }
+    #dropdown-menu {
+        height: 25px;
+        width: 300px;
+        margin-left: 20px;
+        margin-top: -10px;
+         
+    }
+
+    #calculator h3 {
+        font-family: Arial, sans-serif;
+        font-size: 13px;
+        font-weight: 700;
+        text-decoration: none solid rgb(10,82,130);
+        color: #0A5282;
+        margin-left: 30px;
+    }
+    #calculator #Weight {
+        font-size: 12px;
+        font-family: Arial,sans-serif;
+        text-decoration: none solid rgb(68,68,68);
+        cursor: text;
+        margin-left:30px;
+        margin-bottom: -10px;
+    }
+    #calculator #weight-box{
+        width: 5%;
+        height: 7px;
+        font-family: Arial,sans-serif;
+        font-size: 10px;
+        text-decoration: none solid rgb(68,68,68);
+        vertical-align: middle;
+        border:1px solid black;
+        border-left: 2px solid #f1f1f1;
+        border-bottom: 2px solid #F1F1F1;
+        ;
+        padding: 5px 5px 5px 5px;
+        cursor: text;
+        margin: 3px 7px 3px 10px;
+        background-color: #ffff;
+        background-position: 0% 0%;
+        background-repeat: no-repeat;
+        color: black;
+        border: none 0px solid;
+    }
+    #calculator #option{
+        width: 40%;
+        height: 24px;
+        font-family: Arial,sans-serif;
+        text-decoration: none solid rgb(68,68,68);
+        font-size: 10px;
+        vertical-align: middle;
+        border-right: 1px solid #f1f1f1;
+        border-bottom: 1px solid #F1F1F1;
+        padding: 5px 5px 5px 5px;
+        cursor: default;
+        margin: 3px 0 3px 0;
+        background-color: #ffff;
+        background-position: 0% 0%;
+        background-repeat: no-repeat;
+        color: black;
+        border: none solid;
+    }
+    #long-box {
+        margin: auto;
+        margin-top: 10px;
+        margin-left: 30px;
+    }
+    #long-box #min-box {
+        font-size: 12px;
+        font-family: Arial,sans-serif;
+        text-decoration: none solid rgb(68,68,68);
+        vertical-align: middle;
+        height: 10px;
+        width: 20px;
+        border: 1.5px solid black;
+        border-right: 2px solid #f1f1f1;
+        border-bottom: 2px solid #f1f1f1 ;
+        margin: 3px 0 3px 3px;
+        padding: 5px 5px 5px 7px;
+        cursor: text;
+        box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+        
+    }
+    #long-box #long {
+        font-size: 12px;
+        font-family: Arial,sans-serif;
+        text-decoration: none solid rgb(68,68,68);
+        height: 20px;
+        width: 40px;
+        cursor: text;
+    }
+    #long-box span {
+        font-family: Arial,sans-serif;
+        font-size: 11px;
+        line-height: 18px;
+        text-decoration: none solid rgb(34,34,34);
+        text-align: left;
+        word-spacing: 0px;
+        height: auto;
+        width: auto;
+
+    }
+    #calculator h5 {
+        font-family: Arial,sans-serif;
+        font-size: 14px;
+        font-weight: 700;
+        text-decoration: none solid rgb(0,0,0);
+        background-color: #ffff;
+        color: rgb(15, 11, 11);
+        margin-left: 40px;
+        
+    }
+    #middle-text{
+        width: 60%;
+        margin: auto;
+        margin-top: -10px;
+        margin-left: 260px;
+    }
+    h4 {
+        font-family: Arial,sans-serif;
+        font-weight: 700;
+        font-size: 16px;
+        color: #0A5282;
+        margin: auto;
+        margin-top: -20px;
+        margin-bottom: 10px;
+        margin-left: 10px;
+    }
+    #cresult{
+        font-size: 15px;
+        color: #51A351;
+        margin-left: 3px;
+    }
+
+    #secondary-title {
+        font-size: 16px;
+        font-weight: 700;
+        font-family: Arial,sans-serif;
+        text-decoration: none solid rgb(10,82,130);
+        text-align: center;
+        color: #0A5282;
+    }
+
+    #pagination {
+        width: 30%;
+        display: flex;
+        font-size: 10px;
+        gap:10px;
+        margin: auto;
+        margin-top: -13px;
+        font-family: Arial, sans-serif;
+        text-decoration: none solid rgb(247,148,30);
+        text-align: center;
+        word-spacing: 0px;
+        cursor: pointer;
+        
+    }
+    #pagination a {
+        text-decoration: none;
+    }
+
+    #Matching-box{
+        display: grid;
+        grid-template-columns: repeat(2,400px);
+       justify-content: center;
+        margin: auto;
+        
+    }
+    #text_box{
+        width: 310px;
+        padding-left: 10px;
+        height: 180px;
+        margin: auto;
+        border: 1px solid black;
+    }
+    #calculator {
+      margin: auto;
+      height: 180px;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    }
+
+    #text_box p {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 10px;
+        line-height: 18px;
+        text-decoration: none solid rgb(34,34,34);
+        text-align: left;
+        color: #0F73Ab;
+        margin: 0 0 3px 0;
+        /* height: 32px;
+        width: 326px; */
+        border-bottom: 1px solid #e6e6e6;
+    }

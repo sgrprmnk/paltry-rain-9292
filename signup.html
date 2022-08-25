@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>signup</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      #navbar {
+        height: 40px;
+        background-color: #fff;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        padding: 10px 5px;
+        box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+      }
+      #navbar > div {
+        font-size: 30px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: blue;
+        cursor: pointer;
+      }
+      #navbar > div:hover {
+        background-color: wheat;
+        border-radius: 5px;
+      }
+      #navbar > div + div {
+        padding-top: 10px;
+        font-size: large;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+        color: black;
+      }
+      body {
+        font-family: sans-serif;
+        background-image: url("https://www.myfitnesspal.com/_next/image?url=%2Fpages%2Fsignup%2Fbg.png&w=828&q=75");
+        background-size: cover;
+        /* background-position: center; */
+      }
+
+      .signup-form {
+        width: 400px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        background-color: #fff;
+        padding: 20px;
+        margin: 8% auto 0;
+        text-align: center;
+        margin-top: 50px;
+      }
+      .signup-form h1 {
+        color: #1c8adb;
+        margin-top: -50px;
+        margin-bottom: 30px;
+      }
+      .input-box {
+        border-radius: 20px;
+        padding: 10px;
+        margin: 10px 0;
+        width: 100%;
+        border: 1px solid #999;
+        outline: none;
+      }
+      button {
+        color: #fff;
+        width: 100%;
+        padding: 10px;
+        border-radius: 20px;
+        font-size: 15px;
+        margin: 10px 0;
+        border: none;
+        outline: none;
+        cursor: pointer;
+      }
+      .signup-btn {
+        background-color: #1c8adb;
+      }
+      .twitter-btn {
+        background-color: #21afde;
+      }
+      a {
+        text-decoration: none;
+      }
+      hr {
+        margin-top: 20px;
+        width: 100%;
+      }
+      .or {
+        background-color: #fff;
+        width: 30px;
+        margin: -11px auto 10px;
+      }
+      img {
+        width: 70px;
+        margin-bottom: 20%;
+        margin-top: -50px;
+      }
+      .input-box,
+      .signup-btn,
+      .twitter-btn,
+      select {
+        width: 90%;
+      }
+      #select {
+        width: 380px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="navbar">
+      <div>myfitnesspal</div>
+      <div>
+        <b><a href="Login.html">LOG IN</a></b>
+      </div>
+    </div>
+
+    <div class="signup-form">
+      <img
+        src="https://th.bing.com/th/id/R.d9055e7bcb65b664ad3f6e061e858e5c?rik=JEbLYSkR%2bbd64Q&riu=http%3a%2f%2fcdn.leapdfw.com%2fwp-content%2fuploads%2f2014%2f12%2ficon_humen.png&ehk=CLnBQc2a0ngh%2bME4s%2fyh%2f9JOUlYMT1v2UCilrZNYRf8%3d&risl=&pid=ImgRaw&r=0"
+        alt=""
+      />
+      <h1><b>Sign Up Now</b></h1>
+      <form action="">
+        <input
+          type="text"
+          id="user_name"
+          class="input-box"
+          placeholder="Enter First Name"
+        />
+        <input
+          type="text"
+          class="input-box"
+          id="user_lastname"
+          placeholder="Enter Last Name"
+        />
+        <input
+          type="email"
+          class="input-box"
+          id="user_email"
+          placeholder="Enter Email Address"
+        />
+        <select id="select" name="Gender" class="input-box">
+          <option value="Male">Male</option>
+          <option value="Female">Female</option>
+          <option value="Other">Other</option>        
+          </select
+        ><br />
+        <input
+          type="password"
+          class="input-box"
+          id="user_password"
+          placeholder="Enter Password"
+        /><br /><br />
+        <p>
+          <span><input type="checkbox" id="checkbox" /></span> agree to the terms of services
+        </p>
+        <br />
+        <button type="button" onclick="signup()" class="signup-btn">
+          Sign Up</button
+        ><br />
+        <hr />
+        <p class="or">Or</p>
+        <button type="button" class="twitter-btn">Login with twitter</button
+        ><br /><br />
+        <p>Do you have an account ? <a href="Login.html">Login</a></p>
+      </form>
+    </div>
+  </body>
+  <script>
+    //adding data to local storage.
+
+    function signup() {
+      let user_name = document.getElementById("user_name").value;             //step1
+      let user_email = document.getElementById("user_email").value;           //step1
+      let password = document.getElementById("user_password").value;          //step1
+      let user_lastname = document.getElementById("user_lastname").value;      //step1
+      let user_gender = document.getElementById("select").value;             //step1
+      let checkbox = document.getElementById("checkbox").checked;           //step1
+      let user_info;
+      if (
+        user_email.length < 1 ||
+        user_name.length < 0 ||         //step4
+        password.length < 1
+      ) {
+        alert("Please,fill all the information"); //if condition is not satisfied then it shows alert
+      } else {   //step5
+        user_info = {
+          user_name,                  //step2
+          user_email,
+          password,
+        };
+        localStorage.setItem("user_info", JSON.stringify(user_info));     //step3  //saving the data to localstorage. if all this information are filled then it shows alert.  
+        //by using this empty string we can empty the input details on refreshing it. and this are always written after localstorage.
+        document.getElementById("user_name").value="";    
+        document.getElementById("user_email").value="";
+        document.getElementById("user_password").value="";
+        document.getElementById("user_lastname").value="";
+        document.getElementById("checkbox").checked="";
+
+
+        alert("You've been sign up successfully");
+      }
+    }
+  </script>
+</html>
