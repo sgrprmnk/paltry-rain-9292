@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://use.fontawesome.com/66a7dd813c.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />    <title>Exercise Diary</title>
+</head>
+<style>
+    #Dairy{
+       
+        display: flex;
+        margin: auto;
+        width: 60%;
+        margin-top:30px ;
+    }
+    #Dairy h1 {
+        font-family: Arial, sans-serif;
+        font-size: 16px;
+        font-weight: 700;
+        text-decoration: none solid rgb(11,86,128);
+        text-align: left;
+        color: #0B5680;
+        margin-top: 15px;
+    }
+ #date {
+    display: flex;
+    gap: 2px;
+    margin-top: 10PX;
+    margin-left: 5px;
+ }
+
+#prev {
+    background-color: #00548f;
+    width:10px;
+    font-size: 20px;
+    color: #ffff;
+    width: 50px;
+    text-align: center;
+    padding: 5px 5px 5px 5px;
+    border-bottom-left-radius: 4px;
+    border-top-left-radius: 4px;
+
+}
+#next {
+    background-color: #00548f;
+    width:30px;
+    color: #ffffff;
+    font-size: 20px;
+    padding-left: 3px;
+    padding: 5px 5px 5px 5px;
+    border-bottom-right-radius: 4px;
+    border-top-right-radius: 4px;
+
+
+}
+#time {
+    background-color: #00548f;
+    color: #ffffff;
+    font-size: 11px;
+    font-weight: 700;
+    color: #ffffff;
+    font-family: Arial,sans-serif;
+    width: 500%;
+    text-align: center;
+    padding-top: 9px;
+    padding-bottom: 2px;
+
+}
+#icon-c{
+    font-size: 30px;
+}
+#CM-div{
+    width: 60%;
+    display: flex;
+    grid-template-columns: repeat(2,1fr);
+    margin: auto;
+}
+#sec-div{
+    width: 50%;
+}
+ #td {
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    line-height: 18px;
+    text-decoration: none solid rgb(0,84,143);
+    text-align: left;
+    text-transform: capitalize;
+    vertical-align: middle;
+    background-color: #ffffff;
+    color: #00548f;
+    padding: 6px 7px 6px 0px;
+}
+#col {
+    width: 50%;
+    display: flex;
+    gap: 1px;
+   
+}
+#div1{
+    border:1px solid black;
+    width: 40%;
+    height: 18px;
+    background-color: #00548f;
+    color: #ffffff;
+    font-family: Arial,Helvetica, sans-serif;
+    font-size: 10px;
+    line-height: 18px;
+    text-align: center;
+    text-transform: capitalize;
+    vertical-align: middle;
+    border: 1px solid #ffff;
+    padding: 2px 2px 2px 2px;
+
+
+
+}
+#div2{
+    border:1px solid black;
+    width: 50%;
+    height: 18px;
+    background-color: #00548f;
+    color: #ffffff;
+    font-family: Arial,Helvetica, sans-serif;
+    font-size: 10px;
+    line-height: 18px;
+    text-align: center;
+    text-transform: capitalize;
+    vertical-align: middle;
+    border: 1px solid #ffff;
+    padding: 2px 2px 2px 2px;
+}
+
+#alt{
+    font-family: Arial,sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    text-decoration: none solid rgb(0,114,191);
+    text-align: left;
+    background-color: #ffff;
+    color: #0072BF;
+    border-right: 1px solid #0f73AB;
+    margin: 20px 7px 0 0;
+    padding: 0 9px 0 0;
+    cursor: pointer;
+}
+</style>
+<body>
+<!-- <div id="main">     -->
+<div id="Dairy">
+<h1>Your Exercise Diary for:</h1>
+<!-- <span id="date" ></span> -->
+<div>
+<span id="date" >
+<i class="fa fa-caret-left" aria-hidden="true" id="prev" ></i>
+<time id="time" >Friday, August 26, 2022</time>
+<i class="fa fa-caret-right" aria-hidden="true"  id="next" ></i>
+<span class="material-symbols-outlined" id="icon-c">
+    calendar_month
+    </span>
+</span>
+</div>
+</div>
+<hr>
+<div id="CM-div" >
+    <div id="sec-div" >
+        <div id="td">
+        <td >Cardiovascular</td>
+    </div>
+        <div id="alt" >
+            <A>Add Exercise</A> |
+            <A>Quick Tools</A>
+        </div>
+    </div>
+    <div id="col" >
+        <div id="div1" >
+        <td>Minutes</td>
+        </div>
+        <div id="div2" >
+        <td>Calories Burned</td>
+    </div>
+    </div>
+</div>
+<hr>
+</body>
+</html>
+
