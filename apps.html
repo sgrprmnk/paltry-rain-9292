@@ -20,6 +20,9 @@
         background: #fff;
         line-height: 1.5em;
       }
+      .container1{
+        margin-top: 100px;
+      }
       .sub img {
         height: 75px;
         width: 75px;
@@ -36,9 +39,9 @@
       .main h3 {
         margin: 4px;
       }
-      .main button {
+    .main  button {
         text-align: center;
-        padding: 3px 0;
+        padding: 4px 0;
         border: 1px solid #d2d2d2;
         border-radius: 5px;
         width: 105px;
@@ -47,13 +50,16 @@
         position: absolute;
         cursor: pointer;
         color: #666666;
-        background-color: #ebebeb;
+        background: #ebebeb;
+        bottom: 0;
       }
       /* #main img {
         height: 120px;
       } */
       h2 {
         margin-bottom: 20px;
+        font-weight: bolder;
+        font-size: 22px;
         border-bottom: 1px solid #d8d8d8;
       }
       .parent {
@@ -69,9 +75,22 @@
         padding-top: 50px;
         padding-inline-start: 40px;
       }
-      ul li:hover {
+      /* ul li:hover {
         background: #1174b9;
+      } */
+      ul li.select, ul li:hover{
+        background: #1174b9;
+        color: white;
       }
+      span.select{
+         background: #1174b9;
+        color: white;
+        border-radius: 40%;
+        text-align: center;
+      } 
+     span.select a{
+      color: #ffffff;
+     }
       ul li {
         list-style: none;
         font-size: 12px;
@@ -120,13 +139,13 @@
         width: 700px;
 
         margin: auto;
-        margin-left: 15vw;
+        margin-left: 12vw;
         padding-inline-start: 40px;
       }
       .part-2 {
-        margin-top: 50px;
+        
         width: 200px;
-        margin-right: 15vw;
+        margin-right: 18vw;
 
         float: left;
       }
@@ -160,6 +179,7 @@
         overflow: hidden;
         margin: 0 0 50px 0;
         height: 252px;
+        margin-top: 50px;
       }
 
       #featured-rotator .featured-image {
@@ -199,6 +219,20 @@
         top: 0px;
         left: 75px;
       }
+      .page{
+        margin: 30px 0px;
+      
+        display: grid;
+        grid-template-columns: repeat(5,20px);
+        justify-content: center;
+        gap: 10px;
+      }
+
+      .page span{
+ font-weight: bold;    
+      }
+      
+    
     </style>
   </head>
   <body>
@@ -206,31 +240,31 @@
     <div class="part-parent">
       <div class="part-1">
         <div id="featured-rotator">
-          <div class="featured-image previous-image">
-            <img
+          <div class="featured-image previous-image" >
+            <img 
               src="https://dakd0cjsv8wfa.cloudfront.net/images/api_clients/0/api_clients_120_2_10_0_25954.png"
               alt=""
             />
           </div>
-          <div class="featured-image">
-            <img
+          <div class="featured-image current-image" >
+            <img 
               src="https://dakd0cjsv8wfa.cloudfront.net/images/api_clients/0/api_clients_229_2_10_0_74866.png"
               alt=""
             />
           </div>
-          <div class="featured-image current-image">
+          <div class="featured-image  " >
             <img
               src="https://dakd0cjsv8wfa.cloudfront.net/images/api_clients/0/api_clients_389_2_10_0_4027.png"
               alt=""
             />
           </div>
-          <div class="featured-image next-image">
+          <div class="featured-image next-image" >
             <img
               src="https://dakd0cjsv8wfa.cloudfront.net/images/api_clients/0/api_clients_180_2_10_0_26145.png"
               alt=""
             />
           </div>
-          <div class="featured-image">
+          <div class="featured-image" >
             <img
               src="https://dakd0cjsv8wfa.cloudfront.net/images/api_clients/0/api_clients_30_2_10_0_90706.png"
               alt=""
@@ -349,16 +383,25 @@
               </div>
             </div>
           </div>
+          <div class="container1">
+            <h2>App Marketplace</h2>
+          </div>
+          <div class="container parent"></div>
         </div>
+       <div class="page"><<span class="select"><a href="">1</a></span><span><a href="">2</a></span><span><a href="">3</a></span>></div>
       </div>
-      <div class="part1a"></div>
+      <div class="part1a">
+        
+      </div>
       <div class="part-2">
         <div class="sidebar">
-          <input type="text" class="searchbar" placeholder="Search" />
+          <form action="">
+          <input type="text" id="search" class="searchbar" placeholder="Search" />
+          </form>
           <div class="categories">
             <h1>Categories</h1>
             <ul>
-              <a href=""> <li>All</li></a>
+              <a href=""> <li class="select">All</li></a>
               <a href=""> <li>Activity Trackers</li></a>
               <a href=""> <li>Step Trackers</li></a>
               <a href=""> <li>Scales</li></a>
@@ -372,6 +415,8 @@
         </div>
       </div>
     </div>
+    <input type="text" id="texta">
+    <h1 id="hi"></h1>
   </body>
 </html>
 <script>
@@ -457,4 +502,87 @@
     },
   ];
 </script>
-<script></script>
+<script>
+let container=document.querySelector(".container")
+let selected=document.querySelector("#search")
+
+
+
+
+
+function display(data){
+
+  data.forEach(function(el){
+  let div=document.createElement("div")
+  div.setAttribute("class","main")
+
+  let div1=document.createElement("div")
+  div1.setAttribute("class","sub")
+
+  let img=document.createElement("img")
+  img.src=el.url
+
+
+  let div2=document.createElement("div")
+  div2.setAttribute("class","sub2")
+
+  let div3=document.createElement("div")
+  div3.setAttribute("class","title")
+  div3.innerText=el.title
+
+  let div4=document.createElement("div")
+  div4.setAttribute("class","tex")
+div4.innerText=el.category
+
+  let btn=document.createElement("button")
+  btn.innerText="GET"
+
+
+  div2.append(div3,div4,btn)
+  div1.append(img)
+  div.append(div1,div2)
+  container.append(div)
+  })
+}
+
+ display(customStore)
+</script>
+
+<script>
+  // #featured-rotator
+  // .previous-image
+  // .current-image
+  // .next-image
+  // .featured-image
+
+// const ca=document.querySelector("#featured-rotator")
+// const next=document.querySelector(".next-image")
+// const prev=document.querySelector(".previous-image")
+// const carIt=ca.querySelectorAll("featured-image")
+// const cut=document.querySelector(".current-image")
+// let url=[
+//   {image:"https://dakd0cjsv8wfa.cloudfront.net/images/api_clients/0/api_clients_120_2_10_0_25954.png"},
+//   {image:"https://dakd0cjsv8wfa.cloudfront.net/images/api_clients/0/api_clients_229_2_10_0_74866.png"},
+//   {image:"https://dakd0cjsv8wfa.cloudfront.net/images/api_clients/0/api_clients_389_2_10_0_4027.png"},
+//   {image:"https://dakd0cjsv8wfa.cloudfront.net/images/api_clients/0/api_clients_180_2_10_0_26145.png"},
+//   {image:"https://dakd0cjsv8wfa.cloudfront.net/images/api_clients/0/api_clients_30_2_10_0_90706.png"},
+//   {image:"https://dakd0cjsv8wfa.cloudfront.net/images/api_clients/0/api_clients_102_2_10_0_2751.png"},
+//   {image:"https://dakd0cjsv8wfa.cloudfront.net/images/api_clients/0/api_clients_392_2_10_0_3957.png"}
+// ]
+
+
+// const classList=["previous-image","current-image","next-image"]
+
+//  let div=document.querySelector(".featured-image")
+// let line=2
+// function auto(){
+
+// div.setAttribute("class",classList[line])
+// line++
+  
+// setInterval(auto,3000)
+// }
+// auto()
+
+
+</script>
