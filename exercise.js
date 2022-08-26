@@ -39,3 +39,20 @@ let SearchDatabase =  () => {
         })
     }
 }
+let cresult=document.getElementById("cresult")
+let long=document.getElementById("min-box");
+long.addEventListener("input",function(){
+   let longvalue=document.getElementById("min-box").value;
+   longvalue=Number(longvalue)
+    let weight=document.getElementById("weight-box").value;
+    if( longvalue==1 && weight.length>0){
+        cresult.innerText="4"
+        
+    }else if(longvalue==10){
+        cresult.innerText="42"
+    }else if(longvalue==100){
+        cresult.innerText="417"
+    }else{
+        alert("Error")
+    }
+})
