@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto&display=swap" rel="stylesheet">
+    <style>
+        *{
+            padding: 0%;
+            margin: 0%;
+            font-family: 'Bebas Neue', cursive;
+            letter-spacing: 1px;
+        }
+        nav{
+            display: grid;
+            grid-template-columns: 200px 400px 200px;
+            justify-content: center;
+            align-items: center;
+            gap: 200px;
+            padding: 20px;
+        }
+        #navlink{
+            display: flex;
+
+            justify-content: center;
+            gap: 30px;
+            background-color: rgb(0,102,238);
+            font-size: 18px;
+            font-weight: 10;
+            height: 38px;
+            align-content: center;
+            align-items: center;
+            z-index: 2;
+        
+        }
+        a{
+            text-decoration: none;
+            color: white;
+            font-size: 17px;
+            font-weight: 100;
+            letter-spacing: 1.3px;
+        }
+        button{
+            cursor: pointer;
+        }
+        #fitness{
+            display: flex;
+            z-index: 1;
+            /* height: 200px; */
+            border-bottom: 2px solid rgb(143, 143, 143);
+            margin-bottom: 20px;
+           
+        }
+        #fitness button,#fitness input{
+            display: flex;
+            height: 37px;
+            text-align: center;
+            justify-content: center;
+            align-content: center;
+            align-items: center;
+            width: 280px;
+            background-color: rgb(37,99,238);
+            color: white;
+            border: none;
+            font-size: 21px;
+            border: 2px solid rgb(37,99,238);
+        }
+        #fitness input{
+            background-color: white;
+            color: rgb(0,102,238);
+            outline: rgb(0,102,238);
+        }
+        #fitness input::placeholder{
+            color: rgb(37,99,238);
+            color:  rgb(37,99,238);
+            background-color: white;
+          
+        }
+        #fitness input::placeholder{
+            outline: rgb(0,102,238);
+        }
+        #fitness button:nth-child(1){
+            background-color: transparent;
+            border: 2px solid rgb(37,99,238);
+            font-size: 21px;
+            color: rgb(37,99,238);
+        }
+        #fitness img:nth-child(1){
+            position: relative;
+            top: -2px;
+            float: left;
+        }
+       #fitness>div:nth-child(2){
+        width: 800px;
+        display: flex;
+        align-items: center;
+        align-content: center;
+        flex-direction: column;
+        text-align: center;
+       }
+       #fitness>div>div{
+        display: flex;
+        gap: 20px;
+       margin: auto;
+       }
+       #fitness>div:nth-child(2) h1{
+        font-size: 48px;
+        color: rgb(51,51,51);
+        letter-spacing: 1.5px;
+        margin: auto;
+       }
+       #fitness>div:nth-child(2) p{
+        font-weight: 100;
+        color: rgb(51,51,51);
+        letter-spacing: 1.4px;
+        margin-top: -25px;
+       }
+       span{
+        color: rgb(0,102,238);
+       }
+       #trending{
+        /* margin-left: 20px; */
+        display: grid;
+        grid-template-columns: 150px 1000px;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 60px;
+        /* gap: 10px; */
+       }
+       #trending h3{
+        letter-spacing: 1.4px;
+        font-size: 18px;
+        font-weight: lighter;
+        color: rgb(142,142,142);
+       }
+       #trending div{
+        height: 1px;
+        border-top: 1.4px solid rgb(0,102,238);
+        /* margin: auto; */
+       }
+       #trendingarticle{
+        display: grid;
+        grid-template-columns: repeat(5,210px);
+        justify-content: center;
+        gap: 20px;
+       }
+       #trendingarticle img{
+        width: 210px;
+       }
+       #trendingarticle p{
+        color: rgb(142,142,142);
+        letter-spacing: 1.4px;
+       }
+    </style>
+</head>
+<body>
+    <nav>
+        <img src="./images/home.png" alt="">
+        <img src="./images/myfiteness.png" alt="">
+        <img src="./images/socialmedia.png" alt="">
+    </nav>
+    <div id="navlink">
+        <a href="">Recipes</a>
+        <a href="">Nutrition</a>
+        <a href="">Weight Loss</a>
+        <a href="">Fitness</a>
+        <a href="">Inspiration</a>
+        <a href="">Essentials</a>
+        <a href="">Video</a>
+    </div>
+    <div id="fitness">
+        <img src="./images/bg`.png" alt="">
+<div><h1>Fitness starts with what you eat.
+</h1>
+<p>Sign up for your personalized newsletter.
+
+</p>
+<div>
+    <input type="email" placeholder="Your Email"><button>SignUp</button>
+</div></div>
+<img src="./images/bg2.png" alt="">
+    </div>
+    <div id="trending">
+        <h3>Trending Articles</h3>
+        <div></div>
+    </div>
+    <div id="trendingarticle">
+        <div id="trending_card">
+            <img src="https://blog.myfitnesspal.com/wp-content/uploads/wordpress-popular-posts/27077-featured-700x400.jpg" alt="">
+            <p>essential guide to protein myfitnesspal premium</p>
+        </div>
+        <div id="trending_card">
+            <img src="https://blog.myfitnesspal.com/wp-content/uploads/wordpress-popular-posts/52404-featured-700x400.jpg" alt="">
+            <p>Barcode Scan moving to Myfitnesspal Premium</p>
+        </div>
+        <div id="trending_card">
+            <img src="https://blog.myfitnesspal.com/wp-content/uploads/wordpress-popular-posts/49723-featured-700x400.jpg" alt="">
+            <p>3 Metabolisim-Boosting micronutrients for weight loss</p>
+        </div>
+        <div id="trending_card">
+            <img src="https://blog.myfitnesspal.com/wp-content/uploads/wordpress-popular-posts/50384-featured-700x400.jpg" alt="">
+            <p>Can you walk too much?</p>
+        </div>
+        <div id="trending_card">
+            <img src="https://blog.myfitnesspal.com/wp-content/uploads/wordpress-popular-posts/47559-featured-700x400.jpg" alt="">
+            <p>Experts Debate: Should You lose fat or build muscle first?</p>
+        </div>
+    </div>
+</body>
+</html>
