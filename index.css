@@ -10,8 +10,10 @@
 }
 
 *{
-    padding: 0;
-    margin: 0;
+    /* font-family: 'Bebas Neue', cursive; */
+    padding: 0%;
+    margin: 0%;
+    scroll-behavior: smooth;
 }
 
 #logo{
@@ -121,10 +123,17 @@ font-weight: bold;
     background-color: aliceblue;
 
     outline: none;
+
 }
 #icn{
     margin-right: 20px;
+
+    color: #0066EE;
+    /* background-color: #0066EE; */
+    cursor: pointer;
+
 }
+
 .hcon{
     
     display: flex;

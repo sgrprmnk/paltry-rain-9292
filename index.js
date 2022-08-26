@@ -1,3 +1,10 @@
+
+function inputt(){
+ window.location.href="food.html"
+}
+
+
+
 const swiper = new Swiper('.swiper', {
 
   autoplay:{
