@@ -129,6 +129,7 @@
         align-items: center;
         justify-content: center;
         margin-bottom: 60px;
+        margin-top: 30px;
         /* gap: 10px; */
        }
        #trending h3{
@@ -141,6 +142,7 @@
         height: 1px;
         border-top: 1.4px solid rgb(0,102,238);
         /* margin: auto; */
+        
        }
        #trendingarticle{
         display: grid;
@@ -150,11 +152,77 @@
        }
        #trendingarticle img{
         width: 210px;
+        cursor: pointer;
        }
        #trendingarticle p{
         color: rgb(142,142,142);
         letter-spacing: 1.4px;
+        cursor: pointer;
        }
+       #latest{
+        height: 500px;
+        width: 80%;
+        margin: auto;
+        background-repeat: no-repeat;
+        display: flex;
+        margin-top: 40px;
+        cursor: pointer;
+        margin-bottom: 40px;
+        justify-self: center;
+        align-items: center;
+        background-image: url(https://blog.myfitnesspal.com/wp-content/uploads/2021/06/No-Cook-Barbecue-Chicken-Salad-Under-300-Calories-1140x545.jpg);
+        }
+        #latest_article{
+            background-color: white;
+            height: fit-content;
+            padding: 20px;
+            margin-left: 5px;
+            -webkit-box-shadow: 0 0 10px 0px rgb(71,86,15);
+    -moz-box-shadow: 0 0 10px 0px rgb(71,86,15);
+    box-shadow: 0 0 20px 0px rgb(71,86,15);
+    margin-top: 340px;
+            
+        }
+        #latest_article h1{
+            color: rgb(71,86,15);
+         
+        }
+        #articlegrid{
+            display: grid;
+            grid-template-columns: repeat(3,360px);
+            gap: 30px;
+            justify-content: center;
+            letter-spacing: 1.2px;
+            font-weight: 100;
+            color: rgb(51,51,51);;
+            
+        }
+        #articlegrid div{
+            cursor: pointer;
+        }
+        #articlegrid img{
+            width: 360px;
+            height: 250px;
+       
+        }
+        #footertext{
+            text-align: center;
+            /* margin: 40px; */
+            padding: 40px;
+            background-color: rgb(238,238,238);
+        }
+        #footertext p{
+            width: 800px;
+            margin: auto;
+            color: rgb(51,51,51);
+            line-height: 19px;
+            margin-top: 20px;
+        }
+        #copyright{
+            text-align: center;
+            background-color: white;
+            padding: 20px;
+        }
     </style>
 </head>
 <body>
@@ -209,6 +277,84 @@
             <img src="https://blog.myfitnesspal.com/wp-content/uploads/wordpress-popular-posts/47559-featured-700x400.jpg" alt="">
             <p>Experts Debate: Should You lose fat or build muscle first?</p>
         </div>
+    </div>
+    <div id="trending">
+        <h3>Latest Articles</h3>
+        <div></div>
+    </div>
+    <div id="latest">
+        <div id="latest_article">
+            <h1>15 NO-COOK LUNCHES UNDER 430 CALORIES</h1>
+            <p>Here’s how to have a healthy lunch without turning on the oven.
+            </p>
+            <p>MYFITNESSPAL’S RECIPES - AUGUST 26, 2022</p>
+        </div>
+    </div>
+    <div id="articlegrid">
+        <div>
+            <img src="https://blog.myfitnesspal.com/wp-content/uploads/2021/09/7-Weight-Loss-Tips-When-Your-Schedule-Is-Out-of-Whack-2-750x592.jpg" alt="">
+            <h3>7 Weight-Loss Tips When Your Schedule Is Out of Whack</h3>
+            <p>August 24,2022</p>
+        </div>
+        <div>
+            <img src="https://blog.myfitnesspal.com/wp-content/uploads/2020/07/IMG_0199What-Grows-Together--750x592.jpeg" alt="">
+            <h3>What Grows Together Goes Together: Tomato, Peach & Plum Recipes</h3>
+            <p>August 23,2022</p>
+        </div>
+        <div>
+            <img src="https://blog.myfitnesspal.com/wp-content/uploads/2018/08/11-Farmers-Market-Inspired-Recipes-Under-325-Calories-750x592.jpg" alt="">
+            <h3>11 Farmers Market-Inspired Recipes Under 325 Calories</h3>
+            <p>August 22,2022</p>
+        </div>
+        <div>
+            <img src="https://blog.myfitnesspal.com/wp-content/uploads/2019/08/7-No-Cook-Hot-Weather-Meal-Prep-Hacks-750x592.jpg" alt="">
+            <h3>7 No-Cook, Hot Weather Meal Prep Hacks</h3>
+            <p>August 21,2022</p>
+        </div>
+        <div>
+            <img src="https://blog.myfitnesspal.com/wp-content/uploads/2021/02/3-Metabolism-Boosting-Micronutrients-For-Weight-Loss-750x592.jpg" alt="">
+            <h3>3 Metabolism-Boosting Micronutrients For Weight Loss</h3>
+            <p>August 20,2022</p>
+        </div>
+        <div>
+            <img src="https://blog.myfitnesspal.com/wp-content/uploads/2022/08/Your-Comprehensive-List-of-Nut-Butters-and-Their-Health-Benefits-2-750x592.jpg" alt="">
+            <h3>Your Comprehensive List of Nut Butters and Their Health Benefits</h3>
+            <p>August 10,2022</p>
+        </div>
+    </div>
+    <div id="trending">
+        <h3>Further Inspiration</h3>
+        <div></div>
+    </div>
+    <div id="trendingarticle">
+        <div id="trending_card">
+            <img src="https://blog.myfitnesspal.com/wp-content/uploads/wordpress-popular-posts/37612-featured-700x400.jpg" alt="">
+            <p>Oatmeal Tortillas</p>
+        </div>
+        <div id="trending_card">
+            <img src="https://blog.myfitnesspal.com/wp-content/uploads/wordpress-popular-posts/52404-featured-700x400.jpg" alt="">
+            <p>Barcode Scan moving to Myfitnesspal Premium</p>
+        </div>
+        <div id="trending_card">
+            <img src="https://blog.myfitnesspal.com/wp-content/uploads/wordpress-popular-posts/49723-featured-700x400.jpg" alt="">
+            <p>3 Metabolisim-Boosting micronutrients for weight loss</p>
+        </div>
+        <div id="trending_card">
+            <img src="https://blog.myfitnesspal.com/wp-content/uploads/wordpress-popular-posts/50384-featured-700x400.jpg" alt="">
+            <p>Can you walk too much?</p>
+        </div>
+        <div id="trending_card">
+            <img src="https://blog.myfitnesspal.com/wp-content/uploads/wordpress-popular-posts/47559-featured-700x400.jpg" alt="">
+            <p>Experts Debate: Should You lose fat or build muscle first?</p>
+        </div>
+    </div>
+
+    <div id="footertext">
+        <img src="https://blog.myfitnesspal.com/wp-content/uploads/2021/03/logo-1.png" alt="">
+        <p>MyFitnessPal is the leading app for tracking—and conquering—your nutrition and fitness goals. Log meals from a database of 14 million foods, track physical activity, and learn how to build healthy habits that stick. With more than 500 recipes, 150 workout routines, and a variety of expert-guided meal and workout plans, you’ll have the support you need for your entire health and fitness journey.</p>
+    </div>
+    <div id="copyright">
+        <p>© 2022MyFitnessPal™ Privacy Policy Terms   Do Not Sell My Personal Information</p>
     </div>
 </body>
 </html>
