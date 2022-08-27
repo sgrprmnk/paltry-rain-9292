@@ -1,5 +1,7 @@
 
-
+body{
+    /* font-family: "Neue Plak UA",Helvetica,Arial,-apple-system,sans-serif; */
+}
 #main_container{
     background-image: url('https://www.myfitnesspal.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fhero-collage-top-large%402x.dcc5ac56.png&w=3840&q=75');
     background-size: cover;
