@@ -1,0 +1,256 @@
+ * {
+     font-family: inherit;
+     font-size: 100%;
+     font-style: inherit;
+     font-weight: inherit;
+     margin: 0;
+     outline: 0;
+     padding: 0;
+     vertical-align: baseline;
+ }
+
+ body {
+     background: #fff;
+     line-height: 1.5em;
+     font-family: "Neue Plak UA", Helvetica, Arial, -apple-system, sans-serif;
+ }
+
+ .container1 {
+     margin-top: 100px;
+ }
+
+ .sub img {
+     height: 75px;
+     width: 75px;
+ }
+
+ .main {
+     display: flex;
+     gap: 10px;
+ }
+
+ .main p {
+     margin: 4px;
+     font-size: 12px;
+     font-weight: bold;
+ }
+
+ .main h3 {
+     margin: 4px;
+ }
+
+ .main button {
+     text-align: center;
+     padding: 1px 0;
+     border: 1px solid #d2d2d2;
+     border-radius: 5px;
+     width: 105px;
+     font-weight: bold;
+     font-size: 11px;
+     position: absolute;
+
+     cursor: pointer;
+     color: #666666;
+     background: #fdf4f4;
+     bottom: 0;
+ }
+
+ /* #main img {
+        height: 120px;
+      } */
+ h2 {
+     margin-bottom: 20px;
+     font-weight: bolder;
+     font-size: 22px;
+     border-bottom: 1px solid #d8d8d8;
+ }
+
+ .parent {
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+     gap: 20px;
+ }
+
+ .sidebar {
+     width: 200px;
+
+     overflow: auto;
+
+     padding-top: 50px;
+     padding-inline-start: 40px;
+ }
+
+ /* ul li:hover {
+        background: #1174b9;
+      } */
+ ul li.select,
+ ul li:hover {
+     background: #1174b9;
+     color: white;
+ }
+
+ span.select {
+     background: #1174b9;
+     color: white;
+     border-radius: 40%;
+     text-align: center;
+ }
+
+ span.select a {
+     color: #ffffff;
+ }
+
+ ul li {
+     list-style: none;
+     font-size: 12px;
+     padding: 13px;
+     color: #0072bc;
+     display: block;
+     border-bottom: 1px solid #d8d8d8;
+ }
+
+ ul {
+     list-style-position: outside;
+     display: block;
+     list-style-type: disc;
+     margin-block-start: 1em;
+     margin-block-end: 1em;
+     margin-inline-start: 0px;
+     margin-inline-end: 0px;
+ }
+
+ .categories,
+ .searchbar {
+     margin-bottom: 40px;
+ }
+
+ .searchbar {
+     width: 180px;
+     font-size: 18px;
+     color: #666666;
+
+     background: #f7f7f7;
+     border: 1px solid #d8d8d8;
+ }
+
+ a,
+ a:link {
+     cursor: pointer;
+     text-decoration: none;
+     color: #0072bc;
+ }
+
+ ul li:hover,
+ a:hover {
+     font-weight: bold;
+     color: #ffffff !important;
+ }
+
+ .part-parent {
+     display: flex;
+ }
+
+ .part-1 {
+     width: 700px;
+
+     margin: auto;
+     margin-left: 12vw;
+     padding-inline-start: 40px;
+ }
+
+ .part-2 {
+
+     width: 200px;
+     margin-right: 18vw;
+
+     float: left;
+ }
+
+ .sub2 h3 {
+     margin-bottom: 0px;
+     padding: 0px;
+ }
+
+ .sub2 {
+     width: 125px;
+     height: 75px;
+     margin-left: 15px;
+     position: relative;
+     float: left;
+ }
+
+ .title {
+     margin-bottom: -6px;
+     font-size: 14px;
+ }
+
+ .tex {
+     font-size: 12px;
+     height: 30px;
+     color: #999999;
+ }
+
+ .main-title {
+     margin-top: 10px;
+     padding-bottom: 5px;
+     font-size: 20px;
+ }
+
+ #featured-rotator {
+     position: relative;
+     overflow: hidden;
+     margin: 0 0 50px 0;
+     height: 252px;
+     margin-top: 50px;
+ }
+
+ #featured-rotator .featured-image {
+     width: 550px;
+     height: 250px;
+     position: absolute;
+     top: 0px;
+     left: 75px;
+     z-index: 5;
+     opacity: 0;
+     border: 1px solid #d8d8d8;
+     -webkit-transition: all 1s ease 0.05s;
+     transition: all 1s ease 0.05s;
+ }
+
+ #featured-rotator .previous-image {
+     -webkit-transform: scale(0.85, 0.85);
+     transform: scale(0.85, 0.85);
+     left: -40px;
+     cursor: pointer;
+     opacity: 0.5;
+ }
+
+ #featured-rotator .next-image {
+     -webkit-transform: scale(0.85, 0.85);
+     transform: scale(0.85, 0.85);
+     left: 188px;
+     cursor: pointer;
+     opacity: 0.5;
+ }
+
+ #featured-rotator .current-image {
+     width: 550px;
+     height: 250px;
+     z-index: 10;
+     opacity: 1;
+     top: 0px;
+     left: 75px;
+ }
+
+ .page {
+     margin: 30px 0px;
+
+     display: grid;
+     grid-template-columns: repeat(5, 20px);
+     justify-content: center;
+     gap: 10px;
+ }
+
+ .page span {
+     font-weight: bold;
+ }
