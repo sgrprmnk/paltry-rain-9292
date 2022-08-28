@@ -1,0 +1,17 @@
+/* nav */
+
+nav{
+    /* display: flex; */
+    /* border: 1px solid red; */
+    /* flex-direction: row; */
+    width: 100%;
+    height: 20vh;
+padding-top: 30px;
+background:rgb(234, 234, 234) ;
+}
+nav>div{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding-top: 30px;
+}
