@@ -1,206 +1,261 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>signup</title>
-    <style>
-      * {
-        margin: 0;
-        padding: 0;
-      }
-      #navbar {
-        height: 40px;
-        background-color: #fff;
-        width: 100%;
-        display: flex;
-        justify-content: space-around;
-        padding: 10px 5px;
-        box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-      }
-      #navbar > div {
-        font-size: 30px;
-        font-family: Arial, Helvetica, sans-serif;
-        color: blue;
-        cursor: pointer;
-      }
-      #navbar > div:hover {
-        background-color: wheat;
-        border-radius: 5px;
-      }
-      #navbar > div + div {
-        padding-top: 10px;
-        font-size: large;
-        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
-          sans-serif;
-        color: black;
-      }
-      body {
-        font-family: sans-serif;
-        background-image: url("https://www.myfitnesspal.com/_next/image?url=%2Fpages%2Fsignup%2Fbg.png&w=828&q=75");
-        background-size: cover;
-        /* background-position: center; */
-      }
+<!DOCTYPE html> 
+<html lang="en"> 
+  <head> 
+    <title>new signup page</title> 
+    <link rel="stylesheet" href="signUp.css">
+  </head> 
+  <body> 
+    <div id="navbar"> 
+      <div>myfitnesspal</div> 
+      <div><b>LOG IN</b></div> 
+    </div> 
+    <div class="parent-div" id="firstpage"> 
+      <div class="child-div"> 
+        <h1> 
+          Welcome! Just a few quick questions so we can customize MyFitnessPal 
+          for you. 
+        </h1> 
+        <br /><br /> 
+        <button class="btn" onclick="firstpage()">Continue</button> 
+      </div> 
+    </div> 
 
-      .signup-form {
-        width: 400px;
-        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-        background-color: #fff;
-        padding: 20px;
-        margin: 8% auto 0;
-        text-align: center;
-        margin-top: 50px;
-      }
-      .signup-form h1 {
-        color: #1c8adb;
-        margin-top: -50px;
-        margin-bottom: 30px;
-      }
-      .input-box {
-        border-radius: 20px;
-        padding: 10px;
-        margin: 10px 0;
-        width: 100%;
-        border: 1px solid #999;
-        outline: none;
-      }
-      button {
-        color: #fff;
-        width: 100%;
-        padding: 10px;
-        border-radius: 20px;
-        font-size: 15px;
-        margin: 10px 0;
-        border: none;
-        outline: none;
-        cursor: pointer;
-      }
-      .signup-btn {
-        background-color: #1c8adb;
-      }
-      .twitter-btn {
-        background-color: #21afde;
-      }
-      a {
-        text-decoration: none;
-      }
-      hr {
-        margin-top: 20px;
-        width: 100%;
-      }
-      .or {
-        background-color: #fff;
-        width: 30px;
-        margin: -11px auto 10px;
-      }
-      img {
-        width: 70px;
-        margin-bottom: 20%;
-        margin-top: -50px;
-      }
-      .input-box,
-      .signup-btn,
-      .twitter-btn,
-      select {
-        width: 90%;
-      }
-      #select {
-        width: 380px;
-      }
-    </style>
-  </head>
-  <body>
-    <div id="navbar">
-      <div>myfitnesspal</div>
-      <div>
-        <b><a href="Login.html">LOG IN</a></b>
-      </div>
+
+    <!-- 2nd page  -->
+    <div class="parent-div2" id="secondpage"> 
+        <div class="child-div2"> 
+          <h1>What is your weight goal?</h1> 
+          <br /><br /> 
+   
+          <input id="firstinput"
+            class="input-box" 
+            type="button" 
+            value="Lose Weight" 
+          /><br /><br /> 
+          <input id="secondinput"
+            class="input-box1" 
+            type="button" 
+            value="Maintain Weight" 
+          /><br /><br /> 
+          <input class="input-box" id="thirdinput" type="button" value="Gain Weight" /> 
+   
+          <div class="son-div2"> 
+            <button class="btn2" onclick="backfirstpage()"><b>BACK</b></button> 
+            <button class="btn3" onclick="thirdpage()"><b>NEXT</b></button> 
+          </div> 
+        </div> 
+      </div> 
+
+
+      <!-- 3rd page -->
+    <div id="thirdpage" class="everypage">
+        <div class="pagehead" >
+            <h3>What is your baseline activity level?
+            </h3>
+            <p>Not including workouts–we count that separately </p>
+        </div>
+        <div id="pagecontent">
+            <div class="thirdpagediv" value="notacitve">
+                <h3>Not Very Active</h3>
+                <p>Spend most of the day sitting (e.g bank teller,desk job)</p>
+            </div>
+            <div class="thirdpagediv2">
+                <h3>Lightly Active</h3>
+                <p>Spend most of the day on your Feet (e.g teacher,sales person)</p>
+            </div>
+            <div class="thirdpagediv3">
+                <h3>Active</h3>
+                <p>Spend most of the day doing some physical activity (e.g food server,postal carrier)</p>
+            </div>
+            <div class="thirdpagediv4">
+                <h3> Very Active</h3>
+                <p>Spend most of the day doing heavy physical activity (e.g carpenter)</p>
+            </div>
+        </div>
+        <div id="buttons">
+        <button  onclick="secondpageback()"><b>BACK</b></button> 
+          <button onclick="fourthpage()"><b>NEXT</b></button> 
+        </div>
     </div>
 
-    <div class="signup-form">
-      <img
-        src="https://th.bing.com/th/id/R.d9055e7bcb65b664ad3f6e061e858e5c?rik=JEbLYSkR%2bbd64Q&riu=http%3a%2f%2fcdn.leapdfw.com%2fwp-content%2fuploads%2f2014%2f12%2ficon_humen.png&ehk=CLnBQc2a0ngh%2bME4s%2fyh%2f9JOUlYMT1v2UCilrZNYRf8%3d&risl=&pid=ImgRaw&r=0"
-        alt=""
-      />
-      <h1><b>Sign Up Now</b></h1>
-      <form action="">
-        <input
-          type="text"
-          id="user_name"
-          class="input-box"
-          placeholder="Enter First Name"
-        />
-        <input
-          type="text"
-          class="input-box"
-          id="user_lastname"
-          placeholder="Enter Last Name"
-        />
-        <input
-          type="email"
-          class="input-box"
-          id="user_email"
-          placeholder="Enter Email Address"
-        />
-        <select id="select" name="Gender" class="input-box">
-          <option value="Male">Male</option>
-          <option value="Female">Female</option>
-          <option value="Other">Other</option>        
-          </select
-        ><br />
-        <input
-          type="password"
-          class="input-box"
-          id="user_password"
-          placeholder="Enter Password"
-        /><br /><br />
-        <p>
-          <span><input type="checkbox" id="checkbox" /></span> agree to the terms of services
-        </p>
-        <br />
-        <button type="button" onclick="signup()" class="signup-btn">
-          Sign Up</button
-        ><br />
-        <hr />
-        <p class="or">Or</p>
-        <button type="button" class="twitter-btn">Login with twitter</button
-        ><br /><br />
-        <p>Do you have an account ? <a href="Login.html">Login</a></p>
-      </form>
+    <!-- fourthpage -->
+
+    <div id="fourthpage" class="everypage">
+        <div class="pagehead">
+            <h3>Please select which sex we should use to calculate your calorie needs.
+
+            </h3>
+            <div id="headbr">  <input type="radio" name="male" id=""><label for="made">Male</label>
+                <input type="radio" name="female" id=""><label for="made">Female</label></div>
+            <div>
+   
     </div>
-  </body>
+    <span id="choice">Which one should I choose?</span> 
+        </div>
+        <div id="pagecontent">
+            <div>
+                <h3>When were you born?</h3>
+                <input type="date" name="" id="">
+            </div>
+            <div>
+                <h3>Where do you live?</h3>
+               <div id="cntry"><p>Country</p><p>Zip Code</p> </div>
+               <div id="option"> <select name="" id="">
+                <option value="United States">United States</option>
+               </select><input type="text" placeholder="Zip Code"></div>
+            </div>
+            <p>We use this information to calculate an accurate calorie goal for you.
+
+            </p>
+        </div>
+        <div id="buttons">
+        <button  onclick="thirdpageback()"><b>BACK</b></button> 
+          <button onclick="fifthpage()" ><b>NEXT</b></button> 
+        </div>
+    </div>
+
+
+
+<!-- 
+    fifth -->
+  <!-- 5th page --> 
+  <div id="fifthpage" class="everypage"> 
+    <!-- headings --> 
+    <div class="pagehead"> 
+      <!-- write your heading here --> 
+      <h1>Almost there! Create your account.</h1> 
+      <input 
+        type="text" 
+        id="user_email" 
+        class="form__input" 
+        autocomplete="off" 
+        placeholder=" " 
+      /> 
+      <label for="email" class="form_label">Email address</label 
+      ><br /><br /><br /><br /> 
+      <input 
+        type="password" 
+        id="user_password" 
+        class="form__input2" 
+        autocomplete="off" 
+        placeholder=" " 
+      /> 
+      <label for="password" class="form_label2">Create a password</label> 
+    </div> 
+    <p class="para">Must be at least 10 characters, no spaces.</p> 
+    <br /><br /><br /> 
+
+    <!-- /headings --> 
+    <div id="pagecontent"> 
+      <!-- write your Content here --> 
+      <p class="p1">By signing up for MyFitnessPal, you are agreeing to our</p> 
+      <p class="p2"><b>Privacy Policy</b> and <b>Terms.</b></p> 
+      <button class="down-btn" onclick="signup()" ><b>Continue</b></button> 
+      <p class="p3" ><b>or</b></p> 
+      <button class="down-btn2"><b>Continue with facebook</b></button> 
+      <p class="p4" >We will never post anything without your permission</p> 
+      <p 
+       class="p5" > 
+        This site is protected by reCAPTCHA and the Google 
+        <p  class="p6" ><b>Privacy Policy</b> and <b>Terms</b> apply.</p> 
+      </p> 
+    </div> 
+  </div> 
+ 
+
+        <!-- /* don't edit this */  -->
+ 
+ 
+
+ 
+
+    <!-- 6th page --> 
+    <div id="sixthpage" class="everypage"> 
+ 
+        <!-- headings --> 
+        <div class="pagehead"> 
+            <!-- write your heading here --> 
+             
+            <h3>How tall are you?</h1> 
+            <div id="flex"> 
+                <input type="text"  class="inbox" placeholder="Height (feet)"> 
+                <input type="text"  class="inbox" placeholder="Height (inches)"> 
+            </div> 
+<p class="col-bl" style="font-size: 17px;  ;"> change units to centimeters </p> 
+ 
+<h3>How much do you weigh?</h1> 
+    <p>It's OK to estimate. You can update this later.</p> 
+<input type="text" class="inbox inboxa" placeholder="Current Weigh (lbs)"> 
+<p class="col-bl" style="font-size: 17px;">change units to kilograms/stone</p> 
+         
+</div> 
+        <!-- /headings --> 
+        <div id="pagecontent"> 
+            <!-- write your Content here --> 
+             
+            <h3 style="font-weight:bold; margin: 0px 20px 5px 20px;">What's your goal weigh?</h1> 
+            <p class="no-mar" style="margin:0px 20px 10px 20px;">Don't worry. This doesn't affect your daily calorie goal 
+           <br>you can always change it later.</p> 
+<input type="text" style="margin: 0px 20px 10px 20px;" class="inbox" placeholder="Goal weight (lbs)"> 
+        </div> 
+        <div id="buttons"> 
+            <button onclick="fourthpageback()"><b>BACK</b></button> 
+            <button onclick="lastpage()"><b>NEXT</b></button> 
+        </div> 
+    </div> 
+
+  </body> 
+  <script src="SignUp.js"></script>
   <script>
-    //adding data to local storage.
+    let firstinput=document.getElementById("firstinput")
+    let secondinput=document.getElementById("secondinput")
+    let thirdinput=document.getElementById("thirdinput");
+    let second=document.getElementById("secondpage")
+    second.addEventListener("click",function(){
+        if(event.target.value=="Lose Weight"){
+            firstinput.style.border="2px solid rgb(0,102,238)";
+            secondinput.style.border="2px solid silver";
+            thirdinput.style.border="2px solid silver";
+        }else if(event.target.value=="Maintain Weight"){
 
-    function signup() {
-      let user_name = document.getElementById("user_name").value;             //step1
-      let user_email = document.getElementById("user_email").value;           //step1
-      let password = document.getElementById("user_password").value;          //step1
-      let user_lastname = document.getElementById("user_lastname").value;      //step1
-      let user_gender = document.getElementById("select").value;             //step1
-      let checkbox = document.getElementById("checkbox").checked;           //step1
-      let user_info;
-      if (
-        user_email.length < 1 ||
-        user_name.length < 0 ||         //step4
-        password.length < 1
-      ) {
-        alert("Please,fill all the information"); //if condition is not satisfied then it shows alert
-      } else {   //step5
-        user_info = {
-          user_name,                  //step2
-          user_email,
-          password,
-        };
-        localStorage.setItem("user_info", JSON.stringify(user_info));     //step3  //saving the data to localstorage. if all this information are filled then it shows alert.  
-        //by using this empty string we can empty the input details on refreshing it. and this are always written after localstorage.
-        document.getElementById("user_name").value="";    
-        document.getElementById("user_email").value="";
-        document.getElementById("user_password").value="";
-        document.getElementById("user_lastname").value="";
-        document.getElementById("checkbox").checked="";
-
-
-        alert("You've been sign up successfully");
+            firstinput.style.border="2px solid silver";
+            secondinput.style.border="2px solid rgb(0,102,238)";
+            thirdinput.style.border="2px solid silver";
+        }else if(event.target.value=="Gain Weight"){
+            firstinput.style.border="2px solid silver";
+            secondinput.style.border="2px solid silver";
+            thirdinput.style.border="2px solid rgb(0,102,238)";
+        }
+    })
+    let third=document.getElementById("thirdpage");
+ 
+    third.addEventListener("click",function(){
+      let thirdpagediv=document.querySelector(".thirdpagediv");
+    let thirdpagediv2=document.querySelector(".thirdpagediv2")
+    let thirdpagediv3=document.querySelector(".thirdpagediv3")
+    let thirdpagediv4=document.querySelector(".thirdpagediv4")
+      if(event.target.parentNode.className=="thirdpagediv"){
+        thirdpagediv.style.border="2px solid rgb(0,102,238)"
+        thirdpagediv2.style.border="2px solid silver";
+        thirdpagediv3.style.border="2px solid silver";
+        thirdpagediv4.style.border="2px solid silver";
+      }else if(event.target.parentNode.className=="thirdpagediv2"){
+        thirdpagediv.style.border="2px solid silver";
+        thirdpagediv2.style.border="2px solid rgb(0,102,238)"
+        thirdpagediv3.style.border="2px solid silver";
+        thirdpagediv4.style.border="2px solid silver";
+      }else if(event.target.parentNode.className=="thirdpagediv3"){
+        thirdpagediv.style.border="2px solid silver";
+        thirdpagediv3.style.border="2px solid rgb(0,102,238)"
+        thirdpagediv2.style.border="2px solid silver";
+        thirdpagediv4.style.border="2px solid silver";
+      }else if(event.target.parentNode.className=="thirdpagediv4"){
+        thirdpagediv.style.border="2px solid silver";
+        thirdpagediv4.style.border="2px solid rgb(0,102,238)"
+        thirdpagediv2.style.border="2px solid silver";
+        thirdpagediv3.style.border="2px solid silver";
       }
-    }
+      
+    })
   </script>
 </html>

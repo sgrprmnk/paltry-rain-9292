@@ -1,0 +1,731 @@
+* { 
+    margin: 0; 
+    padding: 0; 
+  } 
+  #navbar { 
+    height: 40px; 
+    background-color: #fff; 
+    width: 100%; 
+    display: flex; 
+    justify-content: space-around; 
+    padding: 10px 5px; 
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px; 
+  } 
+  #navbar > div { 
+    font-size: 30px; 
+    font-family: "Neue Plak UA", Helvetica, Arial, sans-serif; 
+    color: blue; 
+    cursor: pointer; 
+  } 
+  #navbar > div + div { 
+    padding-top: 10px; 
+    font-size: large; 
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", 
+      sans-serif; 
+    color: black; 
+  } 
+  body { 
+    font-family: sans-serif; 
+    background-image: url("https://www.myfitnesspal.com/_next/image?url=%2Fpages%2Fsignup%2Fbg.png&w=828&q=75"); 
+    background-size: cover; 
+  } 
+  .parent-div { 
+    font-weight: 800; 
+    font-family: "Neue Plak UA", Helvetica, Arial, sans-serif; 
+    width: 500px; 
+    height: 620px; 
+    margin: auto; 
+    position: relative; 
+    box-shadow: 0px 8px 32px rgb(0 0 0 / 12%); 
+    border-radius: 12px; 
+    margin-top: 40px; 
+    box-sizing: inherit; 
+    display: block;
+    top: -33px; 
+    /* display: none; */
+    /* display: unset; */
+  } 
+  .child-div { 
+    width: 400px; 
+    height: 320px; 
+    position: absolute; 
+    left: 50%; 
+    top: 60%; 
+    color: rgba(0, 0, 0, 0.87); 
+    transform: translate( 
+      -50%, 
+      -50% 
+    ); /* half of top 50% and half of left 50% */ 
+    font-size: 14px; 
+    background-color: #fff; 
+    text-align: center; 
+    font-family: "Neue Plak UA", Helvetica, Arial, -apple-system, sans-serif; 
+  } 
+  .btn { 
+    font-size: 1rem; 
+    font-weight: 700; 
+    text-transform: uppercase; 
+    background-color: #0066ee; 
+    color: #fff; 
+    border-radius: 4px; 
+    border-color: transparent; 
+    cursor: pointer; 
+    padding: 15px 140px; 
+  } 
+  .btn:hover { 
+    background-color: #0d52ad; 
+  } 
+#fifthpage{
+  display: none;
+}
+
+  /* 2nd page css */
+  .parent-div2 { 
+    width: 500px; 
+    height: 520px; 
+    /* border: 1px solid red; */ 
+    position: relative; 
+    margin: auto; 
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; 
+    margin-top: 4%; 
+    border-radius: 12px; 
+    display: none;
+  } 
+  .child-div2 { 
+    width: 400px; 
+    /* border: 1px solid blue; */ 
+    height: 320px; 
+    position: absolute; 
+    left: 10%; 
+    top: 10%; 
+  } 
+  .son-div2 { 
+    width: 400px; 
+    /* border: 1px solid black; */ 
+    height: 120px; 
+    position: absolute; 
+    top: 110%; /*  this work like margin top */ 
+  } 
+  .input-box { 
+    padding: 15px 140px; 
+    margin-left: 4%; 
+    background-color: #fff; 
+    font-size: 15px; 
+    cursor: pointer; 
+    border: 3px solid rgb(193, 189, 189); 
+    border-radius: 4px; 
+    /* box-sizing: border-box; 
+    transition: .3s; */ 
+  } 
+  /* .input-box[type=button]:focus{ 
+border-color: blue; 
+box-shadow: rgb(0, 102, 238); 
+  } */ 
+  .input-box:hover { 
+    border-color: grey; 
+  } 
+  .input-box1:hover { 
+    border-color: grey; 
+  } 
+
+  .input-box1 { 
+    padding: 15px 128px; 
+    margin-left: 4%; 
+    background-color: #fff; 
+    font-size: 15px; 
+    border: 3px solid rgb(193, 189, 189); 
+    border-radius: 4px; 
+    cursor: pointer; 
+  } 
+  .son-div2 { 
+    text-align: center; 
+  } 
+  .son-div2 button { 
+    padding: 15px 64px; 
+  } 
+  .btn2 { 
+    margin-right: 3%; 
+    background-color: transparent; 
+    border: 2px solid rgb(0, 102, 238); 
+    color: rgb(0, 102, 238); 
+    border-radius: 4px; 
+    font-size: 16px; 
+    cursor: pointer; 
+  } 
+  .btn2:hover { 
+    background-color: whitesmoke; 
+  } 
+  .btn3:hover { 
+    background-color: rgb(4, 79, 176); 
+  } 
+  .btn3 { 
+    background-color: rgb(0, 102, 238); 
+    letter-spacing: 0.015625rem; 
+    color: rgb(255, 255, 255); 
+    border-radius: 4px; 
+    cursor: pointer; 
+    border: #fff; 
+    font-size: 18px; 
+  } 
+  h1 { 
+    font-size: 1.25rem; 
+    text-align: center; 
+    font-family: "Neue Plak UA", Helvetica, Arial, sans-serif; 
+  } 
+  h1,h2,h3,h4{
+    font-family: "Neue Plak UA", Helvetica, Arial, sans-serif; 
+  }
+#thirdpage{
+    display: none;
+}
+
+/* don't edit this */
+  .everypage{
+    background-color: white;
+    width: 450px; 
+    height: fit-content;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    -webkit-box-shadow: 0 0 10px 0px silver;
+    -moz-box-shadow: 0 0 10px 0px silver;
+    box-shadow: 0 0 20px 0px silver;
+    margin-top: 340px;
+    position: absolute;
+    transform: translateY(20%);
+    transform: translateX(100%);
+    font-family: "Neue Plak UA", Helvetica, Arial, sans-serif; 
+    margin-top: 30px;
+    border-radius: 10px;
+    margin-bottom: 90px;
+  }
+
+  /* you can customize it but dont remove anything */
+  .pagehead{
+    /* color: white; */
+    text-align: center;
+    padding: 5px;
+    margin-bottom: 10px;
+  }
+  /* you can customize it but dont remove anything */
+  .pagehead p{
+    font-size: 15px;
+    margin-top: 5px;
+  }
+
+    /* you can customize it but dont remove anything */
+  .pagehead h3{
+    font-size: 25x;
+    margin-top: 5px;
+    text-transform: capitalize;
+   
+  }
+
+  /* dont edit it  */
+  #pagecontent{
+    margin: auto;
+    width: 80%;
+    /* padding: 10px; */
+    /* border: 2px solid silver; */
+    margin-bottom: 10px;
+  }
+
+  /* you can customize but dont remove it  */
+  #pagecontent h3{
+    font-size: 17px;
+    font-weight: 300;
+    color: black;
+
+  }
+   /* you can customize but dont remove it  */
+  #pagecontent p{
+    font-size: 13px;
+    font-weight: 200;
+    color: rgb(58, 58, 58);
+    line-height: 20px;
+    margin-top: 10px;
+  }
+
+   /* you can customize but dont remove it  */
+ #pagecontent>div{
+    margin-top: 10px;
+    margin-bottom: 15px;
+    border: 2px solid silver;
+    padding: 10px;
+    cursor: pointer;
+
+ }#pagecontent>div:last-child{
+  margin-bottom: 25px;
+ }
+
+  /* dont remove it  */
+ #buttons{
+    text-align: center;
+
+ }
+
+   /* dont remove it  */
+ #buttons button:nth-child(1){
+    padding: 12px 54px; 
+    background-color: transparent; 
+    border: 2px solid rgb(0, 102, 238); 
+    color: rgb(0, 102, 238); 
+    border-radius: 4px; 
+    font-size: 16px; 
+    cursor: pointer; 
+ }
+
+   /* dont remove it  */
+
+ #buttons button:nth-child(2){
+    background-color: rgb(0, 102, 238); 
+    letter-spacing: 0.015625rem; 
+    color: rgb(255, 255, 255); 
+    border-radius: 4px; 
+    cursor: pointer; 
+    border: #fff; 
+    font-size: 18px; 
+    padding: 12px 54px; 
+ }
+ #fourthpage{
+    display: none;
+ }
+
+#headbr{
+    margin-top: 10px;
+    text-align: left;
+    margin-left: 35px;
+}
+#headbr label{
+    margin-right: 10px;
+}
+#headbr input{
+    margin: 10px;
+}
+#choice{
+    color: #0066ee;
+    margin-left: 2px;
+    position: relative;
+    left: -78px;
+   top: 10px;
+    background-color: rgb(240,240,240);
+}
+#cntry,#option{
+    display: flex;
+    justify-content: space-between;
+  
+}
+#cntry{
+    z-index: 2;  
+    
+
+}
+#cntry p{
+    z-index: 3;
+    background-color: white;
+    
+}
+#cntry p:nth-child(1){
+    position: relative;
+    right: -10px;
+}
+#cntry p:nth-child(2){
+    position: relative;
+    left: -30px;
+}
+#option{
+    position: relative;
+    top: -7.0px;
+    z-index: 1;
+}
+
+#fourthpage #pagecontent{
+    gap: 40px;
+    
+}
+
+#fourthpage #pagecontent p{
+    text-align: center;
+}
+#fourthpage #pagecontent>div{
+margin-top: 14px;
+border: none;
+}
+#fourthpage #pagecontent>div h3{
+    font-size: 22px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#fourthpage #pagecontent>div input,#fourthpage #pagecontent> select,#fourthpage #pagecontent>div option{
+    height: 35px;
+    padding-left: 15px;
+    padding-right: 15px;
+
+}
+#option select{
+    height: 39px;
+    padding-left: 15px;
+    padding-right: 15px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* sixth page */
+
+
+.everypage { 
+    background-color: white; 
+    width: 450px; 
+    height: fit-content; 
+    padding-top: 20px; 
+    padding-bottom: 20px; 
+    -webkit-box-shadow: 0 0 10px 0px silver; 
+    -moz-box-shadow: 0 0 10px 0px silver; 
+    box-shadow: 0 0 20px 0px silver; 
+    margin-top: 340px; 
+    position: absolute; 
+    transform: translateY(20%); 
+    transform: translateX(100%); 
+    margin-top: 30px; 
+    border-radius: 10px; 
+    margin-bottom: 90px; 
+} 
+
+/* don't edit this */ 
+
+/* you can customize it but dont remove anything */ 
+#sixthpage .pagehead { 
+    /* color: white; */ 
+    text-align: center; 
+    padding: 5px; 
+    margin-bottom: 10px; 
+} 
+
+/* you can customize it but dont remove anything */ 
+#sixthpage .pagehead p { 
+    font-size: 12px; 
+    margin-top: 5px; 
+} 
+
+/* you can customize it but dont remove anything */ 
+#sixthpage .pagehead h3 { 
+    font-size: 20x; 
+    margin-top: 5px; 
+
+} 
+
+/* dont edit it  */ 
+#pagecontent { 
+    margin: auto; 
+    width: 80%; 
+    /* padding: 10px; */ 
+    /* border: 2px solid silver; */ 
+    margin-bottom: 10px; 
+} 
+
+/* you can customize but dont remove it  */ 
+#sixthpage #pagecontent h3 { 
+    font-size: 18px; 
+    font-weight: 300; 
+    color: black; 
+
+} 
+
+/* you can customize but dont remove it  */ 
+#sixthpage #pagecontent p { 
+    font-size: 13px; 
+    font-weight: 200; 
+    color: rgb(58, 58, 58); 
+    line-height: 20px; 
+    margin-top: 10px; 
+} 
+
+/* you can customize but dont remove it  */ 
+#sixthpage #pagecontent>div { 
+    margin-top: 10px; 
+    margin-bottom: 10px; 
+    border: 2px solid silver; 
+    padding: 10px; 
+    cursor: pointer; 
+
+} 
+
+/* dont remove it  */ 
+#sixthpage #buttons { 
+    text-align: center; 
+margin-bottom: 20px; 
+} 
+
+/* dont remove it  */ 
+#sixthpage #buttons button:nth-child(1) { 
+    padding: 12px 54px; 
+    background-color: transparent; 
+    border: 2px solid rgb(0, 102, 238); 
+    color: rgb(0, 102, 238); 
+    border-radius: 4px; 
+    font-size: 16px; 
+    cursor: pointer; 
+} 
+
+/* dont remove it  */ 
+
+#sixthpage #buttons button:nth-child(2) { 
+    background-color: rgb(0, 102, 238); 
+    letter-spacing: 0.015625rem; 
+    color: rgb(255, 255, 255); 
+    border-radius: 4px; 
+    cursor: pointer; 
+    border: #fff; 
+    font-size: 18px; 
+    padding: 12px 54px; 
+} 
+#sixthpage .inbox{ 
+padding: 14px; 
+} 
+#sixthpage .inboxa{ 
+display: flex; 
+align-items: flex-start; 
+margin-left:60px ; 
+} 
+.col-bl{ 
+
+color: rgb(74,102,238); 
+text-align: left; 
+margin-left:60px 
+}   
+
+#sixthpage #align{ 
+
+margin: 0; 
+color: rgba(0, 0, 0, 0.87); 
+font-size: 1rem; 
+font-weight: 400; 
+line-height: 1.5; 
+font-family: "Neue Plak UA",Helvetica,Arial,-apple-system,sans-serif; 
+background-color: #fff; 
+} 
+#sixthpage #flex{ 
+display: flex; 
+margin-left: 60px; 
+gap: 8px; 
+} 
+#sixthpage #flex input{ 
+width: 120px; 
+} 
+
+#sixthpage .pagehead h3,#sixthpage p{ 
+text-align: left;  
+margin-left:60px 
+} 
+#sixthpage .pagecontent input{ 
+margin-left: 60px;
+text-align: left; 
+} 
+
+
+#sixthpage h3{ 
+font-weight: bold; 
+margin-bottom: 8px;
+color: rgb(44, 43, 43);
+} 
+
+#sixthpage{
+    display: none;
+}
+
+
+
+
+
+/* fifth page */
+
+ /* don't edit this */ 
+ #fifthpage * { 
+  font-family: "Neue Plak UA", Helvetica, Arial, sans-serif; 
+} 
+#fifthpage .everypage { 
+  background-color: white; 
+  width: 450px; 
+  height: fit-content; 
+  padding-top: 20px; 
+  padding-bottom: 20px; 
+  -webkit-box-shadow: 0 0 10px 0px silver; 
+  -moz-box-shadow: 0 0 10px 0px silver; 
+  box-shadow: 0 0 20px 0px silver; 
+  margin-top: 340px; 
+  position: absolute; 
+  transform: translateY(20%); 
+  transform: translateX(100%); 
+  margin-top: 30px; 
+  border-radius: 10px; 
+  margin-bottom: 90px; 
+} 
+/* don't edit this */ 
+
+/* you can customize it but dont remove anything */ 
+#fifthpage .pagehead { 
+  /* color: white; */ 
+  text-align: center; 
+  padding: 5px; 
+  margin-bottom: 10px; 
+} 
+
+/* dont edit it  */ 
+#fifthpage #pagecontent { 
+  margin: auto; 
+  width: 80%; 
+  margin-bottom: 10px; 
+} 
+
+/* you can customize but dont remove it  */ 
+#fifthpage #pagecontent > div { 
+  margin-top: 10px; 
+  margin-bottom: 10px; 
+  border: 2px solid silver; 
+  padding: 10px; 
+  cursor: pointer; 
+} 
+
+
+#fifthpage body { 
+  font-family: "Convergence", sans-serif; 
+} 
+#fifthpage h1 { 
+  font-family: "Neue Plak UA", Helvetica, Arial, -apple-system, sans-serif; 
+  font-size: 1.25rem; 
+  margin-bottom: 60px; 
+} 
+
+#fifthpage  .form__input { 
+  position: absolute; 
+  padding: 15px; 
+  padding-right: 130px; 
+  margin-left: -170px; 
+  font-family: inherit; 
+  font-size: inherit; 
+  border: 0.5px solid black; 
+  text-align: left; 
+  border-radius: 3px; 
+} 
+#fifthpage .form__input2 { 
+  position: absolute; 
+  padding: 15px; 
+  padding-right: 130px; 
+  margin-left: -170px; 
+  font-family: inherit; 
+  font-size: inherit; 
+  border: 0.5px solid black; 
+  text-align: left; 
+  border-radius: 3px; 
+   
+
+} 
+#fifthpage .form_label { 
+  position: absolute; 
+  background-color: white; 
+  padding: 2px; 
+  left: 5rem; 
+  top: 8.5rem; 
+  cursor: text; 
+  transition: top 200ms ease-in, left 200ms ease-in, 
+    font-size 200ms ease-in; 
+} 
+#fifthpage .form_label2 { 
+  position: absolute; 
+  background-color: white; 
+  padding: 2px; 
+  left: 5rem; 
+  top: 13rem; 
+  cursor: text; 
+  transition: top 200ms ease-in, left 200ms ease-in, 
+    font-size 200ms ease-in; 
+} 
+
+#fifthpage .form__input:focus ~ .form_label,.form__input:not(:placeholder-shown).form__input:not(:focus)~.form_label { 
+  top: 7rem; 
+  font-size: 0.9rem; 
+  color: rgb(28, 1, 1); 
+} 
+#fifthpage .form__input2:focus ~ .form_label2,.form__input2:not(:placeholder-shown).form__input2:not(:focus)~.form_label2 { 
+  top: 11.5rem; 
+  font-size: 0.9rem; 
+  color: rgb(28, 1, 1); 
+
+} 
+#fifthpage .para { 
+  margin-top: 12%; 
+  margin-left: 13%; 
+} 
+#fifthpage .down-btn, 
+#fifthpage .down-btn2 { 
+  cursor: pointer; 
+  vertical-align: middle; 
+  font-size: 0.875rem; 
+  text-transform: uppercase; 
+  min-width: 64px; 
+  color: #fff; 
+  background-color: #0066ee; 
+  border-radius: 4px; 
+  border-color: transparent; 
+  padding: 15px 134px; 
+  margin-left: 2.5%; 
+} 
+#fifthpage .down-btn:hover{ 
+  background-color: #0959c1; 
+
+} 
+#fifthpage .down-btn2:hover{ 
+  background-color: rgb(47, 90, 176); 
+
+} 
+#fifthpage .down-btn2 { 
+  margin-left: 2.5%; 
+  padding: 14px 73px; 
+  background-color: rgb(66, 103, 178); 
+} 
+#fifthpage .p1{ 
+  margin-left: 6%; 
+  font-size: 13px; 
+
+} 
+#fifthpage .p2{ 
+  margin-left: 25%; 
+  color: blue; 
+  margin-top: -9px; 
+
+  font-size: 13px; 
+} 
+#fifthpage .p3{ 
+  margin-left: 45%; 
+  font-size: 15px; 
+}
+#fifthpage .p4{ 
+  margin-left: 5%; 
+  font-size: 13px; 
+
+} 
+#fifthpage .p5{ 
+  margin-left: 5%; 
+  font-size: 13px; 
+
+} 
+#fifthpage .p6{ 
+  margin-left: 20%; 
+  font-size: 13px; 
+  margin-top: -9px; 
+  color: blue; 
+} 
