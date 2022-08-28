@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet preload" href="https://web-assets.myfitnesspal.com/fonts/neue-plak-ua.css" as="style">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #main{ 
+        height: 550px;
+        width: 500px;
+        margin: auto;
+        margin-top: 70px;
+        font-family: "Neue Plak UA", Helvetica,-apple-sytem,Arial,sans-serif;
+        background-color: #ffff;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        
+    }
+    #heading_gender{
+        font-size: 10px;
+        font-weight: 700;
+        line-height: 24px;
+        text-decoration: none solid rgba(0,0,0,0,87);
+        width: 372px;
+        margin: auto;
+        margin-top: 20px;        
+    }
+    #select-G{
+        display: flex;
+        width: 400px;
+        margin: auto;
+        margin-top: 10px;
+
+    }
+    #select-G input{
+        width: 30px;
+    }
+    #select-G span{
+        font-size: 15px;
+        font-family: "Neue Plak UA", Helvetica,Arial,-apple-system,sans-serif;
+        line-height: 24px;
+        text-decoration: none solid rgba(0,0,0,87);
+        width: 52px;
+        height: 23;
+    }
+    #question{
+        display: flex;
+        width: 372px;
+        margin: auto;
+    }
+    .fa-question-circle{
+        width: 15px;
+        height: 20px;
+        margin-top: 7px;
+        padding: 2px;
+        color: blue;
+    }
+    #question h5{
+        font-family: "Neue Plak UA", Helvetica,Arial,-apple-system,sans-serif;
+        font-size: 13px;
+        line-height: 24px;
+        text-align: center;
+        text-decoration: none solid rgb(0,102,238);
+        color: #0066EE;
+        background-color: rgb(243, 236, 236);
+        cursor: pointer;
+        margin-top: 6px;
+    }
+    #Born-div{
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 24px;
+        width: 372px;
+        height: 23px;
+        display: block;
+        margin: auto;
+        margin-top: -25px;
+    }
+    #date-div{
+        border: 1px solid black;
+        margin-top: -20px;
+        height: 55px;
+        width: 182px;
+        padding:0 10px 0 0 ;
+
+    }
+    #date {
+        border: 0px solid;
+        font-size: 15px;
+        text-align: center;
+        margin-top: 15px;
+        margin-left: 20px;
+    }
+    #live h5{
+        font-size: 18px;
+        font-weight: 700;
+        width: 372px;
+        line-height: 24px;
+        margin: auto;
+        margin-top: 90px;
+    }
+    body{
+        font-family: "Neue Plak UA",Helvetica,Arial,-apple-system,sans-serif;
+    }
+</style>
+
+<body >
+    <div id="main" >
+        <div id="heading_gender">
+            <h1>Please select which sex we should use to calculate your calories needs.</h1>
+        </div>
+        <div id="select-G" >
+            <input type="radio" name="gender" value="male"> <span>Male</span>
+            <input type="radio" name="gender" value="female"> <span>Female</span>
+        </div>
+        <div id="question" >
+            <i class="fa fa-question-circle"></i>
+            <h5>Which one should I choose?</h5>
+        </div>
+        <div id="Born-div" >
+            <h5>When were you born?</h5>
+            <div id="date-div" >
+            <input type="date"  id="date" >
+        </div>
+        </div>
+        <div id="live" >
+            <h5>Where do you live?</h5>
+        </div>
+    </div>
+   
+</body>
+</html>
