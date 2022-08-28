@@ -68,6 +68,12 @@
       margin-top: 50px;
       margin-bottom: 50px;
     }
+    .pub{
+      cursor: pointer;
+    }
+    .mak{
+      cursor: pointer;
+    }
     </style>
    <link rel="stylesheet" href="nav.css">
     <link rel="stylesheet" href="footer.css">
@@ -77,15 +83,15 @@
       <div id="main_container">
           <div id="container">
               <div id="logo">
-                  <h1 id="logoo"><img src="https://www.myfitnesspal.com/assets/logo.svg" alt=""></h1>
+                  <h1 id="logoo"><a href="./index.html"><img  class="mak" src="https://www.myfitnesspal.com/assets/logo.svg" alt=""></a></h1>
                   <div>
-                      <p>Login</p>
-                      <p>Signup</p>
+                      <p><a href="Login.html">Log In</a></p>
+                      <p><a href="signup.html">Sign Up</a></p>
                   </div>
           </div>
          <!-- nav bar -->
            <div class="nav">
-              <div>
+              <div class="pub" >
                   <h3 onclick=window.location.href="./about.html">ABOUT</h3>
                   <h3 onclick=window.location.href="./food.html">FOOD</h3>
                   <h3 onclick=window.location.href="./exercise.html">EXERCISE</h3>
@@ -117,14 +123,14 @@
           placeholder="Password"
         /><br />
 
-        <p class="pass"><b>Forgot password ?</b></p>
+        <p class="pass"><b>Forgot password ?</b></p><br><br>
         <button type="button" onclick="login()" class="login-btn">
           <b> LOG IN</b>
-        </button>
-        <p class="or">Or</p>
+        </button><br><br>
+        <p class="or">Or</p><br>
         <button type="button" class="facebook-btn">
           <b>CONTINUE WITH FACEBOOK</b>
-        </button>
+        </button><br><br>
       </form>
     </div>
     <p id="para">
