@@ -62,7 +62,7 @@ body{
 .food_h{
 font-size: 50px;
 font-style:inherit;
-font-weight: bold;
+font-weight: 50%;
 }
 .food_p{
     margin-top: 20px;

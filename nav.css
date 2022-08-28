@@ -1,0 +1,56 @@
+#random #main_container{
+ 
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* width: 200px; */
+    /* height: 130vh; */
+    object-fit: cover;
+    
+}
+
+*{
+    /* font-family: 'Bebas Neue', cursive; */
+    padding: 0%;
+    margin: 0%;
+    /* scroll-behavior: smooth; */
+}
+
+#random #logo{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 35px;
+    margin-right: 30px;
+    margin-top: 20px;
+    margin-left: 11%;
+
+
+
+}
+#random #logo>div{
+    display: flex;
+    gap: 20px;
+}
+#random .nav{
+    /* border: 1px solid red; */
+    margin-top: 20px;
+
+    background-color: #0066EE;
+    display: flex;
+    /* justify-content: center; */
+    /* margin-left: 40%; */
+    gap: 10px;
+}
+#random .nav>div{
+    display: flex;
+    margin-left: 10%;
+    gap: 20px;
+    padding: 15px;
+    color: whitesmoke;
+
+
+}
+
+#random #logo{
+    color:#0066EE ;
+} 
+

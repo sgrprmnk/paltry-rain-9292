@@ -208,6 +208,8 @@
         text-decoration: none solid rgb(10,82,130);
         text-align: center;
         color: #0A5282;
+        margin-bottom: 30px;
+        margin-top: 30px;
     }
 
     #pagination {
@@ -222,6 +224,9 @@
         text-align: center;
         word-spacing: 0px;
         cursor: pointer;
+
+
+        margin-bottom: 30px;
         
     }
     #pagination a {
@@ -229,6 +234,7 @@
     }
 
     #Matching-box{
+        /* margin-bottom: 30px; */
         display: grid;
         grid-template-columns: repeat(2,400px);
        justify-content: center;
@@ -260,3 +266,4 @@
         width: 326px; */
         border-bottom: 1px solid #e6e6e6;
     }
+
