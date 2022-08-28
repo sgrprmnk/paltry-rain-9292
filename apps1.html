@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet preload" href="https://web-assets.myfitnesspal.com/fonts/neue-plak-ua.css" as="style">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%
+        }
+
+        body {
+            background: #fff;
+            line-height: 1.5em;
+            font-family: "Neue Plak UA", Helvetica, Arial, -apple-system, sans-serif;
+        }
+
+        #parent {
+            display: flex;
+            gap: 300px;
+            align-content: space-between;
+        }
+
+        #sub-p {
+            display: flex;
+            gap: 20px;
+        }
+
+        #main {
+            width: 50vw;
+            margin: auto;
+        }
+
+        p {
+            color: #999999;
+        }
+
+        button {
+            width: 130px;
+            height: 40px;
+            border: 1px solid #999999;
+            margin-bottom: 10px;
+            cursor: pointer;
+        }
+
+        #btn1 button {
+            background-color: blueviolet;
+            color: white;
+        }
+
+        #btn2 button {
+            background-color: #ebebeb;
+            color: #666666;
+        }
+
+        #sub-p img {
+            height: 100px;
+            width: 100px;
+        }
+
+        #sub-p {
+            margin-top: 10px;
+        }
+
+        img {
+            width: 700px;
+            height: 300px;
+        }
+
+        #para p {
+            margin-bottom: 10px;
+        }
+        #logoo{
+            margin-left:150px;
+        }
+        .nav h3{
+    cursor: pointer;
+ }
+    </style>
+  
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="footer.css">
+</head>
+
+<body>
+    <div id="random">
+        <div id="main_container">
+            <div id="container">
+                <div id="logo">
+                    <h1 id="logoo">myfitnesspal</h1>
+                    <div>
+                        <p>Login</p>
+                        <p>Signup</p>
+                    </div>
+                </div>
+                <!-- nav bar -->
+                <div class="nav">
+                    <div style="font-size: 14px; margin-left:280px">
+                        <h3 onclick=window.location.href="./about.html">ABOUT</h3>
+                        <h3 onclick=window.location.href="./food.html">FOOD</h3>
+                        <h3 onclick=window.location.href="./exercise.html">EXERCISE</h3>
+                        <h3 onclick=window.location.href="./apps.html">APPS</h3>
+                        <h3 onclick=window.location.href="./login.html">COMMUNITY</h3>
+                        <h3 onclick=window.location.href="./Blog.html">BLOG</h3>
+                        <h3 onclick=window.location.href="./premium.html">PREMIUM</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <div id="main">
+        <p style="color:#999999; margin: 10px 0px;">APP Gallery > Fitbit</p>
+        <div id="parent">
+            <div id="sub-p">
+                <img src="https://dakd0cjsv8wfa.cloudfront.net/images/api_clients/0/api_clients_30_1_10_0_45741.png"
+                    alt="">
+                <div>
+                    <h2>Fitbit</h2>
+                    <p>Fitbit</p>
+                </div>
+
+            </div>
+
+            <div>
+                <p id="btn1"><button>CONNECT</button></p>
+                <p id="btn2"> <button>BUY</button></p>
+            </div>
+        </div>
+
+        <div>
+            <img src="https://dakd0cjsv8wfa.cloudfront.net/images/api_clients/0/api_clients_30_3_10_0_17450.png" alt="">
+        </div>
+        <div id="para">
+            <p>Track your steps, distance, calories burned, active minutes, stairs climbed, and sleep with Fitbit
+                devices. Your stats
+                upload wirelessly via computer or select mobile devices, so you can see progress toward your goals. Stay
+                motivated by
+                earning badges or connecting with friends for support or friendly competitions. Log food, workouts and
+                more.</p>
+            <p>By connecting your Fitbit Tracker to your MyFitnessPal account, all of the data tracked by your Fitbit
+                will be
+                synchronized with your MyFitnessPal account. Your daily calorie goal will automatically be adjusted to
+                take into account
+                your activity level as measured by your Fitbit.
+            </p>
+            <p>**Works with all Fitbit Trackers**</p>
+        </div>
+    </div>
+
+    <nav>
+        <div style="font-size: 10px;">
+            <p>Calorie Counter</p>
+            <p>Blog</p>
+            <p>Terms</p>
+            <p>Privacy</p>
+            <p>Contact Us</p>
+            <p>API</p>
+            <p>Jobs</p>
+            <p>Feedback</p>
+            <p>Community Guidelines</p>
+            <p>Ad Choices</p>
+            <p>Do Not Sell My Personal Information</p>
+            <select name="" id="">
+                <option value="">English</option>
+                <option value="">Deutsh</option>
+                <option value="">Espanol</option>
+            </select>
+        </div>
+        <p style="text-align: center; margin-top: 10px;">© 2022 MyFitnessPal, Inc.</p>
+    </nav>
+</body>
+
+</html>

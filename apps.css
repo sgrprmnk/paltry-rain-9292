@@ -218,7 +218,13 @@
  }
 
  #logoo{
-    font-size: 25px;
+    font-size: 30px;
+    font-weight: bold;
+    margin-left: 150px;
+ }
+
+ .nav h3{
+    cursor: pointer;
  }
 
  #featured-rotator .previous-image {
