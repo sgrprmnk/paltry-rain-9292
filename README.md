@@ -1,2 +1,2 @@
-# paltry-rain-9292
+# MyFitnessPal (Clone)
 Construct week project
