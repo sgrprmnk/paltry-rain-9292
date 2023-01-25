@@ -4,8 +4,9 @@ body{
 }
 #main_container{
     background-image: url('./images/bg.png');
-    background-size: cover;
+    background-size: 50%;
     background-repeat: no-repeat;
+background-position: right;
     /* width: 200px; */
     height: 130vh;
     object-fit: cover;
